@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقييم المنتج</title>
+    <style>
+    
+        .rating {
+            margin: 10px 0;
+        }
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            color: lightgray; /* لون النجوم غير المقيّمة */
+        }
+        button.rated {
+            color: gold; /* لون النجوم المقيّمة */
+        }
+    </style>
+</head>
+<body>
+    <h1>تقييم المنتج</h1>
+    <div class="rating">
+        <button class="star" onclick="rate(1)">⭐</button>
+        <button class="star" onclick="rate(2)">⭐</button>
+        <button class="star" onclick="rate(3)">⭐</button>
+        <button class="star" onclick="rate(4)">⭐</button>
+        <button class="star" onclick="rate(5)">⭐</button>
+    </div>
+    <div>
+        <button onclick="like()">👍 لايك</button>
+        <span id="likeCount">0</span>
+    </div>
+    <p>التقييم الحالي: <span id="currentRating">لم يتم التقييم بعد</span></p>
+
+    <script>
+        const storedRating = localStorage.getItem('rating');
+        const storedLikes = localStorage.getItem('likes') || 0;
+
+        if (storedRating) {
+            document.getElementById('currentRating').innerText = storedRating + ' نجوم';
+            highlightStars(storedRating);
+        }
+        document.getElementById('likeCount').innerText = storedLikes;
+
+        function rate(stars) {
+            localStorage.setItem('rating', stars);
+            document.getElementById('currentRating').innerText = stars + ' نجوم';
+            highlightStars(stars);
+        }
+
+        function highlightStars(stars) {
+            const buttons = document.querySelectorAll('.star');
+            buttons.forEach((button, index) => {
+                button.classList.toggle('rated', index < stars);
+            });
+        }
+
+        function like() {
+            let likes = parseInt(localStorage.getItem('likes')) || 0;
+            likes++;
+            localStorage.setItem('likes', likes);
+            document.getElementById('likeCount').innerText = likes;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>اظافــة الهويــة الشخصيــة</title>
+    <link href="//fonts.googleapis.com/css?family=Mukta:400,500,600" rel="stylesheet">
+    <link rel="icon" href="assets/icon/icon-hotel.png">
+    <link rel="stylesheet" href="assets/css/page4.css">
+</head>
+<style>
+    input, select, button {
+        width: 70%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+    button {
+        background-color: #25D366; /* لون زر واتساب */
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    button:hover {
+        background-color: #128C7E;
+    }
+    .tx1{
+       color: rgb(235, 204, 146);
+    }
+</style>
+<body>
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+                <li class="nav-item @@contact__active">
+                  
+                </li>
+            </nav>
+        </div>
+    </header>
+    <section class="w3l-about-breadcrumb">
+        <div class="breadcrumb-bg breadcrumb-bg-about py-5">
+            <div class="container py-lg-4 py-md-3">
+                <img class="i2" src="assets/images/eee.web"><br>
+                <span class="pp">Arabs Hospitable Hotel فنــدق مضايــف العـرب</span>
+            </div>
+        </div>
+    </section>
+
+  
+    <h4 class="s">التاكد من الهويــة الشخصيــة</h4>
+    <img  src="assets/icon2/الهوية.web" width="100%">
+   
+    <h4>يرجى تاكيـد  نـوع الهويـة</h4>
+    <h6 class="tx1">ملاحظة لايعتبر صورة للهوية الشخصية بديلا عنها </h6>
+    <h4></h4>
+    <br>
+    <div class="container">
+     <select id="count" required>
+        <option value=""></option>
+        <option value="1">جــواز ســفــر</option>
+        <option value="2">بطاقة شخصية</option>
+        <option value="3">عقد زواج</option>
+      
+     </select><br>
+     <button onclick="sendToWhatsApp()">التالي</button>
+     <h4><a href="page4-6.html">تخطــي</a></h4>
+    </div>
+    <script>
+        function sendToWhatsApp() {
+            
+            const count = document.getElementById('count').value;
+            if (!count) {
+                alert("يرجى تحديد حقل نوع الهوية الحالية لديك .");
+                return;
+            }
+
+            
+            const message = ` لدي : ${count}`;
+            const phoneNumber = '734157579'; // الرقم الثابت
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+            // فتح الرابط في نفس النافذة
+            window.location.href = url;
+
+            // إعادة توجيه المستخدم إلى page4-5 بعد فترة قصيرة
+            setTimeout(() => {
+                window.location.replace("page4-6.html");
+            }, 2000); // 2 ثواني
+        }
+    </script>
+   <!--
+
+
+    <li> <p class="btn btn-style btn-primary mt-md-5 mt-4" onclick="openWhatsApp()">WhatsApp فتح محادثة</p></li>
+    <script>
+      function openWhatsApp() {
+        const phoneNumber = '734157579'; // استبدل برقم الهاتف المراد التواصل معه
+        const whatsappUrl = `https://wa.me/${phoneNumber}`;
+        window.open(whatsappUrl, '_blank');
+      }
+    </script>
+    
+
+    -->
+
+</body>
+</html>

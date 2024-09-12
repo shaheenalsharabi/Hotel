@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكاميرا</title>
+    <style>
+        video, canvas {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #000000;
+            margin-bottom: 0xp;
+            border-radius: 15px;
+        }
+        button {
+            padding: 0px 10px;
+            color: orange;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .v {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="v">
+      <img src="assets/icon2/كمراء1.svg" width="70px"><br>
+      <video id="video" autoplay></video><br>
+      
+      <button id="stop"><img src="assets/icon2/اغلاق كيمراء0.svg" width="45px"><br>اغلاق الكاميرا</button>
+      <button id="capture"><img src="assets/icon2/كيمراء.svg" width="45px"><br>التقاط</button>
+      <button id="start"><img src="assets/icon2/تشغيل الكيامراء.svg" width="45px"><br>اعادة تشغيل<br></button>
+      <canvas id="canvas"></canvas>
+    </div>
+    <button id="save"><img src="assets/icon2/تحميل.svg" width="45px"><br>تحميل الصورة</button>
+  
+    <br>
+  
+    <script>
+      const video = document.getElementById('video');
+      const canvas = document.getElementById('canvas');
+      const context = canvas.getContext('2d');
+      const captureButton = document.getElementById('capture');
+      const stopButton = document.getElementById('stop');
+      const startButton = document.getElementById('start');
+      const saveButton = document.getElementById('save');
+      let stream;
+  
+      // دالة لفتح الكاميرا الخلفية
+      function startCamera() {
+        navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } } })
+          .then(s => {
+            stream = s;
+            video.srcObject = stream;
+          })
+          .catch(error => {
+            console.error("خطأ في الوصول إلى الكاميرا: ", error);
+          });
+      }
+  
+      // بدء الكاميرا عند تحميل الصفحة
+      startCamera();
+  
+      // التقاط الصورة وإيقاف الكاميرا
+      captureButton.addEventListener('click', () => {
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        stream.getTracks().forEach(track => track.stop());
+        stream = null; // تعيين stream إلى null
+        canvas.style.display = 'block'; // عرض الكانفاس
+        saveButton.style.display = 'block'; // عرض زر الحفظ
+      });
+  
+      // إيقاف عرض الفيديو
+      stopButton.addEventListener('click', () => {
+        if (stream) {
+          stream.getTracks().forEach(track => track.stop());
+          video.srcObject = null;  // إيقاف عرض الفيديو
+          stream = null; // تعيين stream إلى null
+        }
+      });
+  
+      // تشغيل الكاميرا مرة أخرى
+      startButton.addEventListener('click', () => {
+        if (!stream) {
+          startCamera();  // فتح الكاميرا إذا لم تكن مفتوحة
+        }
+      });
+  
+      // حفظ الصورة عند الضغط على زر الحفظ
+      saveButton.addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');
+        link.download = 'captured_image.png';
+        link.click();
+      });
+    </script>
+</body>
