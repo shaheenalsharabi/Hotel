@@ -25,7 +25,7 @@
             border: 2px solid rgb(68, 66, 70);
             border-radius: 12px;
             text-align: center;
-            color: rgba(102, 51, 153, 0.468);
+            color: blake;
             font-weight: bold;
           background-color: white;
         }
@@ -34,9 +34,11 @@
             color: white;
             border: none;
             cursor: pointer;
+               padding: 10px;
         }
         button:hover {
             background-color: green;
+            
         }
     </style>
 </head>
@@ -45,7 +47,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
                 <li class="nav-item @@contact__active">
-                    <a class="nav-link" href="الطابق 5-غرف عادية.html"><h4><img src="icon2/رجوع.svg"></h4></a>
+                    <a class="nav-link" href="الطابق-4-غرف عادية.html"><h4><img src="icon2/رجوع.svg"></h4></a>
                 </li>
             </nav>
         </div>
@@ -59,6 +61,9 @@
         </div>
     </section>
     <style>
+        .box1{
+            color: rgba(102, 51, 153, 0.488);
+        }
       .x1{
       
         padding: 7px;
@@ -75,47 +80,32 @@
     <div class="container">
       <div class="select"><h4 class="x1">الـغـرف</h4>
         <h4 class="x2">قم باادخال البيانات</h4>
-        <input type="text" id="name" placeholder="اســـم النـزيـل" required maxlength="20" title="">
+         <input type="text" id="name" placeholder="اســـم النـزيـل" required maxlength="20" title="">
         <input type="tel" id="phone" placeholder="رقم الهاتف" required maxlength="9" title="">
-        <input class="box1" type="text" required maxlength="20" id="roomType" value="غرفــة عادية" readonly>
-        <input class="box1" type="text" required maxlength="20" id="floor" value="الخامس" readonly>
-        
-<!---------------------------------------------------------------------------------------->
-       
-<!----------------------------------------------------------------------->
-<select id="roomNumber" required>
-  <option value="">قم باادخال رقم الغرفة</option>
-  <option value="1">501</option>
-  <option value="2">502</option>
-  <option value="3">503</option>
-  <option value="4">504</option>
-  <option value="4">510</option>
-  <option value="4">511</option>
-  <option value="4">515</option>
-  <option value="4">516</option>
-  <option value="4">517</option>
-</select>
-<!--------------------------------------------------------------------------------------->
-<input type="text" id="dateTime" readonly>
-      </div>
+        <input type="box1" id="dateTime" readonly>
+        <input class="box1" type="text" required maxlength="20" id="roomType" value="غرفة عادية" readonly><br>
+        <input class="box1" type="text" required maxlength="20" id="floor" value="الرابع" readonly><br>
+        <input class="box1" type="text" required maxlength="20" id="roomNumber" value="402" readonly><br>
+          <br>
         <button onclick="sendToWhatsApp()">طـلــــب حجــز</button>
-    </div>
-<br>
-    <script>
+     </div>
+        <br
+<!---------------------------------------------------------------------------------------->
+ <script>
         function sendToWhatsApp() {
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
+            const dateTime = document.getElementById('dateTime').value;
             const roomType = document.getElementById('roomType').value;
             const floor = document.getElementById('floor').value;
             const roomNumber = document.getElementById('roomNumber').value;
-            const dateTime = document.getElementById('dateTime').value;
 
-            if (!name || !phone || !roomType || !floor || !roomNumber || !dateTime) {
+            if (!name || !phone   || !dateTime|| !roomType || !floor || !roomNumber) {
                 alert("يرجى ملء جميع الحقول.");
                 return;
             }
 
-            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n وقت وتاريخ الحجز: ${dateTime}\n نوع المجلس : ${roomType} \n الطابق: ${floor} \n رقم المجلس: ${roomNumber}`;
+            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n  وقت وتاريخ الحجز: ${dateTime}\n نوع الغرفة : ${roomType} \n الطابق: ${floor} \n رقم الغرفة: ${roomNumber}`;
             const phoneNumber = '734157579'; // الرقم الثابت
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -138,5 +128,9 @@
       updateDateTime();
       setInterval(updateDateTime, 1000); // تحديث كل ثانية
   </script>
+<!----------------------------------------------------------------------->
+
+
+
 </body>
 </html>
