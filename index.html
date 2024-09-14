@@ -664,74 +664,10 @@
                           </div>
                           <div class="card-body course-details">
                               <a href="page3.html" class="course-desc"><h4 class="tex1">الغــرف والاجنحــة</h4></a>
-                              <style>
-    
-                                .rating {
-                                    margin: 10px 0;
-                                    font-size: 5px;
-                                }
-                                button {
-                                    background: none;
-                                    border: none;
-                                    cursor: pointer;
-                                    font-size: 20px;
-                                    color: lightgray; /* لون النجوم غير المقيّمة */
-                                }
-                                button.rated {
-                                    color: gold; /* لون النجوم المقيّمة */
-                                }
-                                .str1{
-                                  font-weight: bold;
-                                }
-                            </style>
+                            
                               <div class="blog-bottom-info">
                                 
-                                <div class="rating">
-                                    <a class="star" onclick="rate(1)"><img  src="assets/images2/نجمة1 (2).png" width="40px"></a>
-                                    <a class="star" onclick="rate(2)"><img  src="assets/images2/نجمة1 (2).png" width="40px"></a>
-                                    <a class="star" onclick="rate(3)"><img  src="assets/images2/نجمة1 (2).png" width="40px"></a>
-                                    <a class="star" onclick="rate(4)"><img  src="assets/images2/نجمة1 (2).png" width="40px"></a>
-                                    
-                                    <p class="str1">التقييم الحالي: <span id="currentRating">لم يتم التقييم بعد</span></p>
-                                </div>
-                               
-                              <div>
-                                  <a onclick="like()"><p class="str1"><img  src="assets/images2/لايك.png" width="50px"> لايك </a>
-                                    <span id="likeCount" class="str1">0</span></p>
-                                  
-                              </div>
-                            
-
-                              <script>
-                                  const storedRating = localStorage.getItem('rating');
-                                  const storedLikes = localStorage.getItem('likes') || 0;
-                          
-                                  if (storedRating) {
-                                      document.getElementById('currentRating').innerText = storedRating + ' نجوم';
-                                      highlightStars(storedRating);
-                                  }
-                                  document.getElementById('likeCount').innerText = storedLikes;
-                          
-                                  function rate(stars) {
-                                      localStorage.setItem('rating', stars);
-                                      document.getElementById('currentRating').innerText = stars + ' نجوم';
-                                      highlightStars(stars);
-                                  }
-                          
-                                  function highlightStars(stars) {
-                                      const buttons = document.querySelectorAll('.star');
-                                      buttons.forEach((button, index) => {
-                                          button.classList.toggle('rated', index < stars);
-                                      });
-                                  }
-                          
-                                  function like() {
-                                      let likes = parseInt(localStorage.getItem('likes')) || 0;
-                                      likes++;
-                                      localStorage.setItem('likes', likes);
-                                      document.getElementById('likeCount').innerText = likes;
-                                  }
-                              </script>
+                              
                           </div>
                       </div>
                   </div></div></div></div></div></section>
@@ -758,52 +694,7 @@
                               <div class="blog-bottom-info">
                                 
                                 
-                                  <div class="rating2">
-                                      <a class="star2" onclick="rate(1)"><img  src="images2/نجمة1 (2).png" width="40px"></a>
-                                      <a class="star2" onclick="rate(2)"><img  src="images2/نجمة1 (2).png" width="40px"></a>
-                                      <a class="star2" onclick="rate(3)"><img  src="images2/نجمة1 (2).png" width="40px"></a>
-                                      <a class="star2" onclick="rate(4)"><img  src="images2/نجمة1 (2).png" width="40px"></a>
-                                      
-                                      <p class="str2">التقييم الحالي: <span id="currentRating2">لم يتم التقييم بعد</span></p>
-                                  </div>
-                                 
-                                <div>
-                                    <a onclick="like()"><p class="str2"><img  src="images2/لايك.png" width="50px"> لايك </a>
-                                      <span id="likeCount2" class="str2">0</span></p>
-                                    
-                                </div>
-                              
-  
-                                <script>
-                                    const storedRating2 = localStorage.getItem('rating2');
-                                    const storedLikes2 = localStorage.getItem('likes2') || 0;
-                            
-                                    if (storedRating) {
-                                        document.getElementById('currentRating2').innerText = storedRating + ' نجوم';
-                                        highlightStars(storedRating);
-                                    }
-                                    document.getElementById('likeCount2').innerText = storedLikes;
-                            
-                                    function rate(stars) {
-                                        localStorage.setItem('rating2', stars);
-                                        document.getElementById('currentRating2').innerText = stars + ' نجوم';
-                                        highlightStars(stars);
-                                    }
-                            
-                                    function highlightStars(stars) {
-                                        const buttons = document.querySelectorAll('.star2');
-                                        buttons.forEach((button, index) => {
-                                            button.classList.toggle('rated2', index < stars);
-                                        });
-                                    }
-                            
-                                    function like() {
-                                        let likes = parseInt(localStorage.getItem('likes2')) || 0;
-                                        likes++;
-                                        localStorage.setItem('likes2', likes);
-                                        document.getElementById('likeCount2').innerText = likes;
-                                    }
-                                </script>
+                               
                               </div>
                           </div>
                       </div>
@@ -821,7 +712,7 @@
                       <div class="card">
                           <div class="card-header p-0 position-relative">
                               <a href="#blog-single" class="zoom d-block">
-                                  <img class="ssssss" src="images2/"
+                                  <img class="ssssss" src="اصالة اجتماعات/المرافق.jpg"
                                       alt="Card image cap"></a>
                                   
                           </div>
