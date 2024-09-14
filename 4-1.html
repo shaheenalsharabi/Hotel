@@ -95,6 +95,13 @@
   <option value="8">416</option>
   <option value="9">417</option>
 </select>
+ <select id="count" required>
+            <option value="">قم باادخال رقم الغرفة</option>
+            <option value="1">401</option>
+            <option value="2">402</option>
+            <option value="3">403</option>
+            <option value="4">405</option>
+        </select>
 <!--------------------------------------------------------------------------------------->
 <input type="text" id="dateTime" readonly>
       </div>
@@ -115,7 +122,7 @@
                 return;
             }
 
-            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n وقت وتاريخ الحجز: ${dateTime}\n نوع الغرفة : ${roomType} \n الطابق: ${floor} \n رقم الغرفة: ${Number}`;
+            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n نوع الغرفة : ${roomType} \n الطابق: ${floor} \n رقم الغرفة: ${Number} \n وقت وتاريخ الحجز: ${dateTime}`;
             const phoneNumber = '734157579'; // الرقم الثابت
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
