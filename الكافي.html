@@ -9,9 +9,9 @@
     <title>الكافيــــة</title>
 
     <link href="//fonts.googleapis.com/css?family=Mukta:300,400,500" rel="stylesheet">
-    <link rel="icon"href="assets/icon/icon3.png">
+    <link rel="icon"href="icon/icon3.png">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/كافية.css">
+    <link rel="stylesheet" href="css/كافية.css">
   </head>
   <body>
 <!--header-->
@@ -26,7 +26,7 @@
     
     
                     <li class="nav-item @@contact__active">
-                      <a class="nav-link" href="page2.html"><h4><img  src="assets/icon2/رجوع.svg"></h4></a>
+                      <a class="nav-link" href="page2.html"><h4><img  src="icon2/رجوع.svg"></h4></a>
                     </li>    
     
                    
@@ -63,7 +63,7 @@
                                       autofocus="">
                                   <button type="submit" class="btn"><span class="fa fa-search"
                                           aria-hidden="true"></span></button>
-                                          <h4>غــــرف عاديــة - الطابق الرابع</h4>
+                                        
                               </form>
     
                           </div>
@@ -96,37 +96,158 @@
     </header>
     <!--/header-->
     <section class="w3l-about-breadcrumb">
-        <div class="breadcrumb-bg breadcrumb-bg-about py-5">
-            <div class="container py-lg-4 py-md-3">
-               
-              <img class="i2" src="assets/images/eee.web" width="20%"><br>
-              <span class="pp">Arabs Hospitable Hotel
-                فنــدق مضايــف العـرب
-            </span>
-            </div>
-        </div>
+        
     </section>
-    
-<!------------------------------------------------------------------------------------------------------------------------>
-<section class="w3l-servicesblock py-5" id="who">
-    <div class="container py-lg-5 py-md-4 py-2">
-        <div class="row">
-            <div class="col-lg-4 about-right-faq align-self">
-                <img  class="v" src="assets/images2/الشعار.png" width="400px">
-                <hr class="">
-                <br></br>
-                <h4 class="title-big mx-0"><img  src="assets/images2/1.png" width="300px"></h4>
-              
-                <h4 class="x">Coffee Shop</h4>
-                <h4 class="x1">كـوفـي شــوب</h4>
-            </div>
-        </div>
-    </div>
+    <style>
+.xxxz{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+ 
+ 
+  color:white;
+  background-color:  rgba(5, 83, 83, 0.514);
+  padding: 5px;
+ 
+  
+}
 
+    </style>
+<!------------------------------------------------------------------------------------------------------------------------>
+<style>
+
+  #carousel {
+              position: relative;
+              width: 100%;
+              height: 390px;
+              overflow: hidden;
+           
+              border-radius: 10px;
+            
+              text-align: center;
+          }
+          .carousel-item {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              transition: opacity 0.5s ease;
+              
+          }
+          .carousel-item.active {
+              opacity: 1;
+          }
+          .carousel-controls {
+              position: absolute;
+              top: 50%;
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              transform: translateY(-50%);
+             
+          }
+          .control-button {
+         
+              border: none;
+             
+              cursor: pointer;
+           
+           
+          }
+    .iom {
+      width: 65%;
+      height: 200px;
+      padding: 0px;
+      border-radius: 10px;
+    }
+    .overlay {
+              position: absolute;
+              bottom: 10px;
+              top: 5px;
+              left: 20px;
+              color:rgb(219, 156, 41);
+        
+              padding: 10px;
+              border-radius: 10px;
+              font-size: 35px;
+            
+              font-weight: bold;
+             
+          }
+  </style>
+  
+  <div id="carousel">
+    
+    
+    <br></br>
+    <img  class="v" src="images2/الشعار.png" width="300px">
+    <br></br>
+    <div class="carousel-item active">
+        <img class="iom" src="images2/1.png" alt="صنف 1">
+        <div class="overlay">كافية لاتية</div>
+        
+    </div>
+    <div class="carousel-item">
+        <img class="iom" src="المرافق/coffee1.png" alt="صنف 2">
+        <div class="overlay">كابتشينو</div>
+    </div>
+    <div class="carousel-item">
+        <img class="iom" src="المرافق/coffee2.png" alt="صنف 3">
+        <div class="overlay">كراميل لاتية</div>
+    </div>
+    <div class="carousel-item">
+        <img class="iom" src="المرافق/coffee3.png" alt="صنف 4">
+        <div class="overlay">هوت شوكلت</div>
+    </div>
+  
+   <div class="carousel-controls">
+        <p class="control-button" id="prev"></p>
+        <p class="control-button" id="next"></p>
+    </div>
+   
+  </div>
+  <h4 class="x">كافي شوب</h4>
+  <h4 class="xxxz">اب - شــارع الثلاثين - مقابل جامعة العلوم والتكنولوجيــا</h4>
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+  
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.classList.remove('active');
+            if (i === index) {
+                item.classList.add('active');
+            }
+        });
+    }
+  
+    function nextItem() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showItem(currentIndex);
+    }
+  
+    document.getElementById('next').addEventListener('click', nextItem);
+    document.getElementById('prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showItem(currentIndex);
+    });
+  
+    // تغيير الصورة تلقائيًا كل 3 ثوانٍ
+    setInterval(nextItem, 4000);
+  </script>
+    
+                 
+               
+                <br>
+             <!-- <h4 class="title-big mx-0"><img  src="assets/images2/1.png" width="70%"></h4>
+                <h4 class="x">Coffee Shop</h4><br>-->  
+              
+                
+           
 <!----------------------------------------------------------دفتر ارشاد--------------------------------------------------------->
 <style>
     .v{
-        border: 3px solid rgb(20, 103, 103);
+      
         border-radius: 20px;
     }
 hr{
@@ -137,8 +258,10 @@ hr{
    margin: 20px;
   }
 .x{
-    color:rgb(2, 91, 91);
+  color: rgb(219, 156, 41);
     font-weight: bold;
+    font-size: 35px;
+  
 }
 .x1{
     color:rgb(2, 91, 91);
@@ -191,7 +314,7 @@ tbody tr:nth-child(even) {
     background: #ddd;
 }
 .B{
-    color: rgb(13, 162, 33);
+    color: rgb(4, 121, 121);
 }
 </style>
 
@@ -227,136 +350,136 @@ tbody tr:nth-child(even) {
                 
             
                 <td class="B">1300﷼</td>
-                <td> قهوة - حليب   - رغوة</td>
-                <td >كابتشينو</td>
+                <td class="B"> قهوة - حليب   - رغوة</td>
+                <td class="B">كابتشينو</td>
             </tr>
             <tr>
                
                 <td class="B">1500﷼</td>
-                <td>قهوة - حليب - رغوة - فانيلا</td>
-                <td>كافية لاتية</td>
+                <td class="B">قهوة - حليب - رغوة - فانيلا</td>
+                <td class="B">كافية لاتية</td>
             </tr>
             <tr>
                
                 <td class="B">1500﷼</td>
-                <td>قهوة - فانيلا - كراميل - رغوة</td>
-                <td>كراميل لاتية</td>
+                <td class="B">قهوة - فانيلا - كراميل - رغوة</td>
+                <td class="B">كراميل لاتية</td>
             </tr>
             <tr>
              
                 <td class="B">1500﷼</td>
-                <td>قهوة - فانيلا - رغوة</td>
-                <td>فانيلا لاتية</td>
+                <td class="B">قهوة - فانيلا - رغوة</td>
+                <td class="B">فانيلا لاتية</td>
             </tr>
             <tr>
               
                 <td class="B">1500﷼</td>
-                <td>قهوة - سنكرز - رغوة</td>
-                <td>سنكرز لاتية</td>
+                <td class="B">قهوة - سنكرز - رغوة</td>
+                <td class="B">سنكرز لاتية</td>
             </tr>
             <tr>
                
                 <td class="B">1500﷼</td>
-                <td>قهوة - باونتي - رغوة</td>
-                <td>باونتي لاتية</td>
+                <td class="B">قهوة - باونتي - رغوة</td>
+                <td class="B">باونتي لاتية</td>
             </tr>
             <tr>
               
                 <td class="B">1500﷼</td>
-              <td>قهوة - حليب - حليب محلى - فانيلا</td>
-                <td>اسبانش لاتية</td>
+              <td class="B">قهوة - حليب - حليب محلى - فانيلا</td>
+                <td class="B">اسبانش لاتية</td>
             </tr>
             <tr>
             
                 <td class="B">1500﷼</td>
-                <td>قهوة مركزة - حليب</td>
-                <td>فلات وايت</td>
+                <td class="B">قهوة مركزة - حليب</td>
+                <td class="B">فلات وايت</td>
             </tr>
             <tr>
              
                 <td class="B">1500﷼</td>
-                <td>قهوة مركزة - حليب</td>
-                <td>كورتادو</td>
+                <td class="B">قهوة مركزة - حليب</td>
+                <td class="B">كورتادو</td>
             </tr>
             <tr>
               
                 <td class="B">1500﷼</td>
-                <td>قهوة مركزة - شوكولاتة - حلب</td>
-                <td>كافي موكا</td>
+                <td class="B">قهوة مركزة - شوكولاتة - حلب</td>
+                <td class="B">كافي موكا</td>
             </tr>
 
             <tr>
               
                 <td class="B">1500﷼</td>
-                <td>.........................</td>
-                <td>قهوة تركية</td>
+                <td class="B">.........................</td>
+                <td class="B">قهوة تركية</td>
             </tr>
             
             <tr>
               
                 <td class="B">1500﷼</td>
-                <td>قهوة مركزة دبل - ماء ساخن</td>
-                <td>امريكانو</td>
+                <td class="B">قهوة مركزة دبل - ماء ساخن</td>
+                <td class="B">امريكانو</td>
             </tr>
             
             <tr>
               
                 <td class="B">1500﷼</td>
-                <td>حليب - شوكلت</td>
-                <td>هوت شوكلت</td>
+                <td class="B">حليب - شوكلت</td>
+                <td class="B">هوت شوكلت</td>
             </tr>
             
             <tr>
               
                 <td class="B">1500﷼</td>
-                <td>قهوة - حليب - كراميل</td>
-                <td>كراميل ميكاتو</td>
+                <td class="B">قهوة - حليب - كراميل</td>
+                <td class="B">كراميل ميكاتو</td>
             </tr>
 
             <tr>
               
                 <td class="B">1000﷼</td>
-                <td>قهوة - رغوة حليب</td>
-                <td>اسبريسو ميكاتو</td>
+                <td class="B">قهوة - رغوة حليب</td>
+                <td class="B">اسبريسو ميكاتو</td>
             </tr>
 
             <tr>
               
                 <td class="B">750﷼</td>
-                <td>قهوة سادة</td>
-                <td>اسبريسو</td>
+                <td class="B">قهوة سادة</td>
+                <td class="B">اسبريسو</td>
             </tr>
 
             <tr>
               
                 <td class="B">500﷼</td>
-                <td>شاي اخضر - ماء ساخن</td>
-                <td>شاهي اخضر</td>
+                <td class="B">شاي اخضر - ماء ساخن</td>
+                <td class="B">شاهي اخضر</td>
             </tr>
 
             <tr>
               
                 <td class="B">500﷼</td>
-                <td>شاي احمر - حليب - ماء ساخن</td>
-                <td>شاهي حليب</td>
+                <td class="B">شاي احمر - حليب - ماء ساخن</td>
+                <td class="B">شاهي حليب</td>
             </tr>
             <tr>
               
                 <td class="B">3000﷼</td>
-                <td>.........................</td>
-                <td>قهوة عربية دلة صغير</td>
+                <td class="B">.........................</td>
+                <td class="B">قهوة عربية دلة صغير</td>
             </tr>
             <tr>
               
                 <td class="B">5000﷼</td>
-                <td>.........................</td>
-                <td>قهوة عربية دلة كبير</td>
+                <td class="B">.........................</td>
+                <td class="B">قهوة عربية دلة كبير</td>
             </tr>
             <tr>
               
                 <td class="B">1500﷼</td>
-                <td>.........................</td>
-                <td>v60 قهوة مقطرة</td>
+                <td class="B">.........................</td>
+                <td class="B">v60 قهوة مقطرة</td>
             </tr>
             <tfoot>
                 <tr>
@@ -372,9 +495,7 @@ tbody tr:nth-child(even) {
 </article>
 
   <!-- move top -->
-  <button onclick="topFunction()" id="movetop" title="Go to top">
-    <span class="fa fa-angle-up"></span>
-  </button>
+  
   <script>
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
@@ -399,13 +520,13 @@ tbody tr:nth-child(even) {
 </section>
 
 <!-- Template JavaScript -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 
-<script src="assets/js/theme-change.js"></script>
+<script src="js/theme-change.js"></script>
 
 <!-- js for portfolio lightbox -->
-<script src="assets/js/jquery-2.1.4.min.js"></script>
-<script src="assets/js/jquery.chocolat.js "></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.chocolat.js "></script>
 <!--light-box-files -->
 <script type="text/javascript ">
   $(function () {
@@ -414,7 +535,7 @@ tbody tr:nth-child(even) {
 </script>
 <!-- /js for portfolio lightbox -->
 
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script>
   $(document).ready(function () {
     $('.popup-with-zoom-anim').magnificPopup({
@@ -518,7 +639,7 @@ tbody tr:nth-child(even) {
 </script>
 <!-- //script for blog slider -->
 
-<script src="assets/js/owl.carousel.js"></script>
+<script src="js/owl.carousel.js"></script>
 
 <!-- script for banner slider-->
 <script>
@@ -595,6 +716,6 @@ tbody tr:nth-child(even) {
 </script>
 <!--//MENU-JS-->
 
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
