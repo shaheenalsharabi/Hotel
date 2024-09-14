@@ -83,7 +83,7 @@
 <!---------------------------------------------------------------------------------------->
        
 <!----------------------------------------------------------------------->
-<select id="Number" required>
+<select id="count" required>
   <option value="">قم باادخال رقم الغرفة</option>
    <option value="1">401</option>
   <option value="2">402</option>
@@ -95,13 +95,7 @@
   <option value="8">416</option>
   <option value="9">417</option>
 </select>
- <select id="count" required>
-            <option value="">قم باادخال رقم الغرفة</option>
-            <option value="1">401</option>
-            <option value="2">402</option>
-            <option value="3">403</option>
-            <option value="4">405</option>
-        </select>
+
 <!--------------------------------------------------------------------------------------->
 <input type="text" id="dateTime" readonly>
       </div>
@@ -114,15 +108,15 @@
             const phone = document.getElementById('phone').value;
             const roomType = document.getElementById('roomType').value;
             const floor = document.getElementById('floor').value;
-            const Number = document.getElementById('Number').value;
+            const Number = document.getElementById('count').value;
             const dateTime = document.getElementById('dateTime').value;
 
-            if (!name || !phone || !roomType || !floor || !Number || !dateTime) {
+            if (!name || !phone || !roomType || !floor || !count || !dateTime) {
                 alert("يرجى ملء جميع الحقول.");
                 return;
             }
 
-            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n نوع الغرفة : ${roomType} \n الطابق: ${floor} \n رقم الغرفة: ${Number} \n وقت وتاريخ الحجز: ${dateTime}`;
+            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n نوع الغرفة : ${roomType} \n الطابق: ${floor} \n رقم الغرفة: ${count} \n وقت وتاريخ الحجز: ${dateTime}`;
             const phoneNumber = '734157579'; // الرقم الثابت
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
