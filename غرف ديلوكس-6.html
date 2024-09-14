@@ -1,30 +1,64 @@
+
 <!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>غرف ديلوكس5</title>
+    <title>غرف ديلوكس الطابق6</title>
     <link href="//fonts.googleapis.com/css?family=Mukta:400,500,600" rel="stylesheet">
-    <link rel="icon"href="assets/icon/icon-hotel.png">
+    <link rel="icon"href="icon/icon-hotel.png">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/غرف عادية.css">
+    <link rel="stylesheet" href="css/غرف عادية.css">
   </head>
-  <body>
+
 <!--header-->
-<header id="site-header" class="fixed-top">
-  <div class="container">
-   
-      <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">    
-      </a></h6>
-     
-
-
-                <li class="nav-item @@contact__active">
-                  <a class="nav-link" href="page3.html"><h4><img  src="assets/icon2/رجوع.svg"></h4></a>
-                </li>    
-
-               
+<body>
+  <!--header-->
+  <header id="site-header" class="fixed-top">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">
+              <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                  data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                  <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav mx-lg-auto">
+                
+                    
+                     <style>
+                      .q{
+                        padding: 8px;
+                        color: white;
+                        font-size: 25px;
+                        background-color: var(--gray-dark);
+                        border: 3px solid rgb(69, 224, 105);
+                        border-radius: 15px ;
+                      }
+                      .q1{
+                        padding: 8px;
+                        color: teal;
+                        font-size: 25px;
+                        background-color: white;
+                      }
+                     </style>
+    
+                    <li>
+                      <a href="5-3.html"><h4 class="q">حجــز</h4></a>
+                    </li>
+                     
+    
+                  
+                     
+                
+    
+                  <li>
+                      <a  href="page3.html"><h4 class="q1">رجوع</h4><span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
               
 
 
@@ -58,7 +92,7 @@
                                   autofocus="">
                               <button type="submit" class="btn"><span class="fa fa-search"
                                       aria-hidden="true"></span></button>
-                                      <h4>غــــرف عاديــة - الطابق الرابع</h4>
+                                   
                           </form>
 
                       </div>
@@ -93,13 +127,79 @@
 <section class="w3l-about-breadcrumb">
     <div class="breadcrumb-bg breadcrumb-bg-about py-5">
         <div class="container py-lg-4 py-md-3">
-          <img class="i2" src="assets/images/eee.web"><br>
+          <img class="i2" src="images/eee.web"><br>
           <span class="pp">Arabs Hospitable Hotel
             فنــدق مضايــف العـرب
         </span>
         </div>
     </div>
 </section>
+<style>
+  table {
+ 
+     
+      width: 100%;
+      text-align: center;
+      
+  }
+  th, td {
+     text-align: center;
+     font-size:15px;
+      font-weight: bold;
+  }
+  th {
+      text-align: center;
+  }
+  
+  caption {
+      font-size: 1.1rem;
+      font-weight: bold;
+      /* background: #fede12; */
+      
+  }
+  
+  thead, tfoot {
+    
+      font-size: 40%;
+      color: orange;
+  }
+ .k{
+  font-size: 25px;
+ }
+ .v{
+  font-size: 25px;
+  color: orange;
+ }
+ .v2{
+  font-size: 15px;
+  color: white;
+ }
+ .cl1{
+  color: orange;
+  font-size:25px;
+ }
+ .cl2{
+  color: orange;
+  font-size:20px;
+  padding:10px;
+ }
+ #salat-list-c{
+  display: none;
+  padding: 10px;
+ }
+ .tx1{
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+ }
+ .xxxsh{
+  background-color: var(--gray-dark);
+ }
+ .s{
+  color: white;
+ }
+  </style>
 
 
 
@@ -114,144 +214,338 @@
                       <div class="item">
                           <div class="card">
                               <div class="card-header p-0 position-relative">
-                                <div class="course-price-badge">غرفة ديلوكس</div>
+                                <div class="course-price-badge"><h4 class="s">غرفــة ديلوكس</h4></div>
                                   <a href="#blog-single" class="zoom d-block">
-                                      <img class="card-img-bottom d-block" src="assets/images/جناحvip.jpg"alt="Card image cap">
+                                      <img class="card-img-bottom d-block" src="images/جناحvip.jpg"alt="Card image cap" id="showPopup">
                                   </a>
                               </div>
+    <style>
+               
+  #popup,#popup2,#popup3,#popup4,#popup5{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border: 2px solid #ccc;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #overlay,#overlay2,#overlay3,#overlay4,#overlay5{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  #salat-list-x{
+    color: white;
+  }
+                              </style>
                               <div class="y">
                                 <p class="fnt"></p>
                                 <div class="shaheen11"> 
                                   <div class="shaheen">
                                   <li>
-                                    <a class="ax" onclick="togglesalatlistt_t()"><img class="n" src="assets/icon2/p.svg">تفاصيل</a>
-                                   
-                                  </li>
-                                  </div>
-                                  <div class="shaheen">
-                                    <li>
-                                      <p class="fnt2">40.000﷼<img class="n" src="assets/icon2/فلوس1.svg"></p>
-                                     
-                                     
-                                  </li>
-                                  </div>
-                                  <div class="shaheen">
-                                    <li>
-                                      <p class="fnt22">606<img class="n" src="assets/icon2/باب جديد.svg"></p>
+                                    <a class="ax" onclick="togglesalatlistt_x1()"><img class="n" src="icon2/p.svg">تفاصيل</a>
+                                    <div id="overlay"></div>
+                                    <div id="popup">
+                                     <br>
+                                     <br></br>
+                                     <br></br>
+                                     <br>
+                                     <h4 class="x"><a id="closePopup">اغلاق</a></h4>
+                                    </div>
+                                    <script>
+                                      const showPopupButton = document.getElementById('showPopup');
+                                      const popup = document.getElementById('popup');
+                                      const overlay = document.getElementById('overlay');
+                                      const closePopupButton = document.getElementById('closePopup');
                                     
+                                    
+                                      showPopupButton.addEventListener('click', () => {
+                                          popup.style.display = 'block';
+                                          overlay.style.display = 'block';
+                                      });
+                                    
+                                      closePopupButton.addEventListener('click', () => {
+                                          popup.style.display = 'none';
+                                          overlay.style.display = 'none';
+                                      });
+                                    
+                                      overlay.addEventListener('click', () => {
+                                          popup.style.display = 'none';
+                                          overlay.style.display = 'none';
+                                      });
+                                    </script>
+                                    
+                                  </li>
+                                  </div>
+                                  <div class="shaheen">
+                                    <li>
+                                      <p class="fnt2">40.000﷼<img class="n" src="icon2/فلوس1.svg"></p>
+                                  </li>
+                                  </div>
+                                  <div class="shaheen">
+                                    <li>
+                                      <p class="fnt22">606<img class="n" src="icon2/باب جديد.svg"></p>
                                     </li>
                                   </div>
                                 </div>    
                                 <br>
-                                <div id="salat-list-1">
-                                  <ul>
-                                    <div class="shaheen112"> 
-                                      <br></br>
-                                    <li> <h4 class="tx0">مــزايــا الغــرف والاجنحــــة</h4></li>
                                 
-                                  
-                                    <li> <a class="tx" onclick="togglesalatlistt_B()">الغـــــرف والحمـــــام</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                    <div id="salat-list-B">
-                                      <ul>
-                                    <br>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/سرير.svg"><br>سرير عائلي</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/غسيل الملابس.svg"><br>خزانة ملابس</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>مجفف شعر</p></li>
-                                   
-                                    <li> <p class="t"><img class="n" src="assets/icon2/bathtub_48dp_F19E39_FILL0_wght400_GRAD0_opsz48.svg"><br>بانيوم</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>.....</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/مراية.svg"><br>مراة المكياج / الحلاقة</p></li>
-                                    <br>
-                                  </ul>
-                                </div>
-                                <script>
-                                    function togglesalatlistt_B(){
-                                      var salatList=document.getElementById("salat-list-B");
-                                      if (salatList.style.display=="none"){
-                                        salatList.style.display="block";
-                                      }else{
-                                        salatList.style.display="none";
-                                      }
-                                    }
-                                  </script> 
-                                    
-                                    <li> <a class="tx"onclick="togglesalatlistt_C()">تكنــــــولـــــوجيـــــــا</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                    <div id="salat-list-C">
-                                      <ul>
-                                       <br>
-                                       <li> <p class="t"><img class="n" src="assets/icon2/شاشة.svg"><br>TV-HD بوصة42</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/usb.svg"><br>مقباس USB مباشر</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>ماكينة اعداد القهوة ولشاي</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/ثلاجة.svg"><br>ثلاجة اطعمة</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/الوافاي.svg"><br>wifi</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/مكيف مركزي.svg"><br>تكيف</p></li>
-                                       
-                                    <br>
-                                  </ul>
-                                </div>
-                                <script>
-                                    function togglesalatlistt_C(){
-                                      var salatList=document.getElementById("salat-list-C");
-                                      if (salatList.style.display=="none"){
-                                        salatList.style.display="block";
-                                      }else{
-                                        salatList.style.display="none";
-                                      }
-                                    }
-                                  </script> 
-                                  
-                                  <li> <a class="tx"onclick="togglesalatlistt_A()">الخــدمـات المجانيـــة</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                  <div id="salat-list-A">
+                                <div id="salat-list-x">
                                   <ul>
-                                  <br>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/الخدمات.svg"><br>خدمة الغرف</p></li>
+
+                                    <div class="shaheen112"> 
+                                    <br>                           
+                                    <div class="v">
+                                     <a>شــروط  الحجـــز</a></div>
+                                    
+                                         <h4 class="tx1">التـاكـد مـن عمليـة ادخـال البيانـات وصحتهـا</h4>
+                                         <h4 class="tx1"> مـدة الحجـر والحضـور لاتتجـاوز الوقت المحدد</h4>
+                                         <h4 class="tx1"> يتـم خصم تكلفـة الالغـاء من القيمة المدفوعـه</h4>
+                                         <h4 class="tx1"> يمكـن تغير نوع العرض في وقت المحدد </h4>
+                                        
+
+      
                                
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/موقف جديد.svg"><br>موقف سيارات</p></li>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>سجادة للصلاة</p></li>
-                                  <br>
-                                  </ul>
-                                </div>
-                                <script>
-                                  function togglesalatlistt_A(){
-                                    var salatList=document.getElementById("salat-list-A");
-                                    if (salatList.style.display=="none"){
-                                      salatList.style.display="block";
-                                    }else{
-                                      salatList.style.display="none";
-                                    }
+                               
+                               <!-------------------------------------------------باية تفاصيل الحجز----------------------------------->
+                               <!--<style>
+                                 #salat-list-d3{
+                                   display: none;
+                                 }
+                               </style>-->
+                               <br>
+                               <h4 class="cl1"><a onclick="togglesalatlistt_d3()"> <img  src="icon2/عرض.svg" width="25px">تفاصيل الحجز</a></h4> 
+                             
+                               <div id="salat-list-d3">
+                               <ul>
+                               <!------------------------------------------الجدول الاول------------------------------------>
+                               <article>
+                                <table>
+                                    <hr>
+                                    <colgroup>
+                                        <col span="1" class="column">
+                                    </colgroup>
+                                    
+                                    <thead>
+                                      
+                                        <tr>
+                                            
+                                            <th>مساحة الغرفة</th>
+                                            <th>الكلفــة</th>
+                                            <th>الطابــق</th>
+                                            <th>غرفة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                           
+                                            <td>....</td>
+                                            <td>40.000﷼</td>
+                                            <td>السادس</td>
+                                            <td>606</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                              </article>
+                              <!--------------------------------------------الجدول الثاني-------------------------------------->
+                              <article>
+                                <table>
+                                    <hr>
+                                    <colgroup>
+                                        <col span="1" class="column">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            
+                                            <th>تكلفة الخدمات</th>
+                                            <th>نوع الخدمات</th>
+                                            <th>محتوى الحمام</th>
+                                            <th>محتوى الغرفة</th>
+                                           
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                           
+                                            <td>......</td>
+                                            <td>......</td>
+                                            <td>......</td>
+                                            <td>سرير عائلي</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            
+                                           
+                                         <td>.......</td>
+                                         <td>.......</td>
+                                         <td>.......</td>
+                                         <td>........</td>
+                                     </tr>
+                                    </tbody>
+                                </table>
+                              </article>
+                              
+                              <!---------------------------------------------------------------جدول الثالث---->
+                              
+                              <article>
+                                <table>
+                                    <hr>
+                                    <colgroup>
+                                        <col span="1" class="column">
+                                    </colgroup>
+                                    
+                                    <thead>
+                                      
+                                        <tr>
+                                            
+                                            <th>...........</th>
+                                            <th>...........</th>
+                                            <th>مدة الالغاء</th>
+                                            <th>مدة الحجز</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                           
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                            <td>16 mint</td>
+                                            <td>15 mint</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                               
+                              </article>
+                              <br>
+                              <a href="5-3.html" class="btn btn-primary btn-style1">تاكيد</a>
+                              <br></br>
+                                <!-----------------------------------------------------------------------------------باية الاتصال----------------------------------------------------------------->
+                                <style>
+                                  #salat-list-d{
+                                  display: none;
                                   }
-                                </script> 
+                                 </style>
+                                <h4 class="cl2"><a onclick="togglesalatlistt_d()"><img  src="icon3/الاتصال.svg" width="20px">الاتصــال بمكــان الاقامــة</a></h4> 
+                                <div id="salat-list-d">
+                                 <ul>
+                                   <br></br>
+                                   <a><img  src="icon3/call.png" width="40px"></a>
                                    <br>
-                                  <div class="y">
-                                        <a href="4-1.html" class="btn btn-primary btn-style1">للحجز وتواصي</a>
-                                  </div>
-                                  <br>
+                                 </ul></div>
+                              
+                               <script>
+                               function togglesalatlistt_d(){
+                                 var salatList=document.getElementById("salat-list-d");
+                                 if (salatList.style.display=="none"){
+                                   salatList.style.display="block";
+                                 }else{
+                                   salatList.style.display="none";
+                                 }
+                               }
+                             </script> 
+                       <!---------------------------------------نهاية الاتصال------------------------------------->
+                     
+                              </ul></div>
+                              <br>     
+                               <!------------------------------------نهاية تفاصيل الحجز--------------------------------->  
+                               <script>
+                                 function togglesalatlistt_d3(){
+                                   var salatList=document.getElementById("salat-list-d3");
+                                   if (salatList.style.display=="none"){
+                                     salatList.style.display="block";
+                                   }else{
+                                     salatList.style.display="none";
+                                   }
+                                 }
+                               </script> 
+                                <!------------------------------------نهاية تفاصيل الحجز--------------------------------->  
+                                  
+                                        <style>
+                                         #salat-list-x{
+                                         display: none;
+                                         }
+                                        </style>  
                                 </ul>
+                              
                                     </div>
                                     <script>
-                                        function togglesalatlistt_t(){
-                                          var salatList=document.getElementById("salat-list-1");
+                                        function togglesalatlistt_x1(){
+                                          var salatList=document.getElementById("salat-list-x");
                                           if (salatList.style.display=="none"){
                                             salatList.style.display="block";
                                           }else{
                                             salatList.style.display="none";
                                           }
                                         }
-                                      </script>        
+                                      </script>   
+                                           
                                     </div>
+                                   
                                 </div>
+                               
                             </div>
                         </div>
-        </div>
-              
+                        
+                      </div> 
+<!-----------------------------------------------------------نهاية الفصل الاول-------------------------------------------------------->
                         <div class="row">
                           <div class="col-md-12 mx-auto">
                       <div class="item">
                           <div class="card">
                               <div class="card-header p-0 position-relative">
-                                <div class="course-price-badge">غرفة ديلوكس</div>
+                                <div class="course-price-badge"><h4 class="s">غرفــة ديلوكس</h4></div>
                                   <a href="#blog-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" src="assets/images/جناحvip.jpg"alt="Card image cap">
+                                    <img class="card-img-bottom d-block" src="images/جناحvip.jpg"alt="Card image cap" id="showPopup2">
+                                    <div id="overlay2"></div>
+                                    <div id="popup2">
+                                    <br>
+
+
+                                    <br>
+                                   <h4 class="x"><a id="closePopup2">اغلاق</a></h4>
+                                  </div>
+                                  <script>
+                                    const showPopupButton2 = document.getElementById('showPopup2');
+                                    const popup2 = document.getElementById('popup2');
+                                    const overlay2 = document.getElementById('overlay2');
+                                    const closePopupButton2 = document.getElementById('closePopup2');
+                                  
+                                  
+                                    showPopupButton2.addEventListener('click', () => {
+                                        popup2.style.display = 'block';
+                                        overlay2.style.display = 'block';
+                                    });
+                                  
+                                    closePopupButton2.addEventListener('click', () => {
+                                        popup2.style.display = 'none';
+                                        overlay2.style.display = 'none';
+                                    });
+                                  
+                                    overlay2.addEventListener('click', () => {
+                                        popup2.style.display = 'none';
+                                        overlay2.style.display = 'none';
+                                    });
+                                  </script>
+                                  
+                                  <!---------------------------------------------------------------3-3-->
+                                
+                                   
+                                
                                   </a>
                               </div>
                               <div class="y">
@@ -259,19 +553,19 @@
                                 <div class="shaheen11"> 
                                   <div class="shaheen">
                                     <li>
-                                      <a class="ax" onclick="togglesalatlistt_t1()"><img class="n" src="assets/icon2/p.svg">تفاصيل</a>
+                                      <a class="ax" onclick="togglesalatlistt_t1()"><img class="n" src="icon2/p.svg">تفاصيل</a>
                                     
                                     </li>
                                     </div>
                                     <div class="shaheen">
                                       <li>
-                                        <p class="fnt2">40.000﷼<img class="n" src="assets/icon2/فلوس1.svg"></p>
+                                        <p class="fnt2">40.000﷼<img class="n" src="icon2/فلوس1.svg"></p>
                                        
                                     </li>
                                     </div>
                                     <div class="shaheen">
                                       <li>
-                                        <p class="fnt22">607<img class="n" src="assets/icon2/باب جديد.svg"></p>
+                                        <p class="fnt22">607<img class="n" src="icon2/باب جديد.svg"></p>
                                     </li>
                                   </div>
                                 </div>    
@@ -281,247 +575,476 @@
                                   <ul>
                                    
                                     <div class="shaheen112"> 
-                                      <br>
-                                      <li> <h4 class="tx0">مــزايــا الغــرف والاجنحــــة</h4></li>
-                                
-                                  
-                                      <li> <a class="tx" onclick="togglesalatlistt_BB()">الغـــــرف والحمـــــام</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                      <div id="salat-list-BB">
-                                        <ul>
-                                      <br>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/سرير.svg"><br>سرير عائلي</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/غسيل الملابس.svg"><br>خزانة ملابس</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>مجفف شعر</p></li>
-                                     
-                                      <li> <p class="t"><img class="n" src="assets/icon2/bathtub_48dp_F19E39_FILL0_wght400_GRAD0_opsz48.svg"><br>بانيوم</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>.....</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/مراية.svg"><br>مراة المكياج / الحلاقة</p></li>
-                                      <br>
-                                    </ul>
-                                  </div>
-                                  <script>
-                                      function togglesalatlistt_BB(){
-                                        var salatList=document.getElementById("salat-list-BB");
-                                        if (salatList.style.display=="none"){
-                                          salatList.style.display="block";
-                                        }else{
-                                          salatList.style.display="none";
-                                        }
-                                      }
-                                    </script> 
+                                      <br>                           
+                                      <div class="v">
+                                       <a>شــروط  الحجـــز</a></div>
                                       
-                                      <li> <a class="tx"onclick="togglesalatlistt_CC()">تكنــــــولـــــوجيـــــــا</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                      <div id="salat-list-CC">
-                                        <ul>
-                                         <br>
-                                         <li> <p class="t"><img class="n" src="assets/icon2/شاشة.svg"><br>TV-HD بوصة42</p></li>
-                                         <li>  <p class="t"><img class="n" src="assets/icon2/usb.svg"><br>مقباس USB مباشر</p></li>
-                                         <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>ماكينة اعداد القهوة ولشاي</p></li>
-                                         <li>  <p class="t"><img class="n" src="assets/icon2/ثلاجة.svg"><br>ثلاجة اطعمة</p></li>
-                                         <li>  <p class="t"><img class="n" src="assets/icon2/الوافاي.svg"><br>wifi</p></li>
-                                         <li>  <p class="t"><img class="n" src="assets/icon2/مكيف مركزي.svg"><br>تكيف</p></li>
-                                         
-                                      <br>
-                                    </ul>
-                                  </div>
-                                  <script>
-                                      function togglesalatlistt_CC(){
-                                        var salatList=document.getElementById("salat-list-CC");
-                                        if (salatList.style.display=="none"){
-                                          salatList.style.display="block";
-                                        }else{
-                                          salatList.style.display="none";
-                                        }
-                                      }
-                                    </script> 
-                                    
-                                    <li> <a class="tx"onclick="togglesalatlistt_AA()">الخــدمـات المجانيـــة</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                    <div id="salat-list-AA">
-                                    <ul>
-                                    <br>
-                                    <li>  <p class="t"><img class="n" src="assets/icon2/الخدمات.svg"><br>خدمة الغرف</p></li>
-                                 
-                                    <li>  <p class="t"><img class="n" src="assets/icon2/موقف جديد.svg"><br>موقف سيارات</p></li>
-                                    <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>سجادة للصلاة</p></li>
-                                    <br>
-                                    </ul>
-                                  </div>
-                                  <script>
-                                    function togglesalatlistt_AA(){
-                                      var salatList=document.getElementById("salat-list-AA");
-                                      if (salatList.style.display=="none"){
-                                        salatList.style.display="block";
-                                      }else{
-                                        salatList.style.display="none";
-                                      }
-                                    }
-                                  </script> 
-                                     <br>
-                                    <div class="y">
-                                          <a href="4-2.html" class="btn btn-primary btn-style1">للحجز وتواصي</a>
-                                    </div>
-                                 
-                                    <br>
-                                  </ul>
-                                  </div>
-                                  <script>
-                                      function togglesalatlistt_t1(){
-                                        var salatList=document.getElementById("salat-list-2");
-                                        if (salatList.style.display=="none"){
-                                          salatList.style.display="block";
-                                        }else{
-                                          salatList.style.display="none";
-                                        }
-                                      }
-                                    </script>             
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-12 mx-auto">
-                      <div class="item">
-                          <div class="card">
-                              <div class="card-header p-0 position-relative">
-                                <div class="course-price-badge">غرفة ديلوكس</div>
-                                  <a href="#blog-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" src="assets/images/جناحvip.jpg"alt="Card image cap">
-                                  </a>
-                              
-                              </div>
-                              <div class="y">
-                                <p class="fnt"></p>
-                                <div class="shaheen11"> 
-                                  <div class="shaheen">
-                                    <li>
-                                      <a class="ax" onclick="togglesalatlistt_t2()"><img class="n" src="assets/icon2/p.svg">تفاصيل</a>
-                                     
-                                    </li>
-                                    </div>
-                                    <div class="shaheen">
-                                      <li>
-                                        <p class="fnt2">40.000﷼<img class="n" src="assets/icon2/فلوس1.svg"></p>
-                                       
-                                    </li>
-                                    </div>
-                                    <div class="shaheen">
-                                      <li>
-                                        <p class="fnt22">608<img class="n" src="assets/icon2/باب جديد.svg"></p>
-                                    </li>
-                                  </div>
-                                </div>    
-                              
-                                <br>
-                                <div id="salat-list-3">
-                                <ul>
-                                  <div class="shaheen112"> 
-                                    <br>
-                                    <li> <h4 class="tx0">مــزايــا الغــرف والاجنحــــة</h4></li>
-                                
-                                  
-                                    <li> <a class="tx" onclick="togglesalatlistt_A1()">الغـــــرف والحمـــــام</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                    <div id="salat-list-A1">
-                                      <ul>
-                                    <br>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/سرير.svg"><br>سرير عائلي</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/غسيل الملابس.svg"><br>خزانة ملابس</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>مجفف شعر</p></li>
-                                   
-                                    <li> <p class="t"><img class="n" src="assets/icon2/bathtub_48dp_F19E39_FILL0_wght400_GRAD0_opsz48.svg"><br>بانيوم</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>.....</p></li>
-                                    <li> <p class="t"><img class="n" src="assets/icon2/مراية.svg"><br>مراة المكياج / الحلاقة</p></li>
-                                    <br>
-                                  </ul>
-                                </div>
-                                <script>
-                                    function togglesalatlistt_A1(){
-                                      var salatList=document.getElementById("salat-list-A1");
-                                      if (salatList.style.display=="none"){
-                                        salatList.style.display="block";
-                                      }else{
-                                        salatList.style.display="none";
-                                      }
-                                    }
-                                  </script> 
-                                    
-                                    <li> <a class="tx"onclick="togglesalatlistt_A2()">تكنــــــولـــــوجيـــــــا</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                    <div id="salat-list-A2">
-                                      <ul>
-                                       <br>
-                                       <li> <p class="t"><img class="n" src="assets/icon2/شاشة.svg"><br>TV-HD بوصة42</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/usb.svg"><br>مقباس USB مباشر</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>ماكينة اعداد القهوة ولشاي</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/ثلاجة.svg"><br>ثلاجة اطعمة</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/الوافاي.svg"><br>wifi</p></li>
-                                       <li>  <p class="t"><img class="n" src="assets/icon2/مكيف مركزي.svg"><br>تكيف</p></li>
-                                       
-                                    <br>
-                                  </ul>
-                                </div>
-                                <script>
-                                    function togglesalatlistt_A2(){
-                                      var salatList=document.getElementById("salat-list-A2");
-                                      if (salatList.style.display=="none"){
-                                        salatList.style.display="block";
-                                      }else{
-                                        salatList.style.display="none";
-                                      }
-                                    }
-                                  </script> 
-                                  
-                                  <li> <a class="tx"onclick="togglesalatlistt_A3()">الخــدمـات المجانيـــة</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
-                                  <div id="salat-list-A3">
-                                  <ul>
-                                  <br>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/الخدمات.svg"><br>خدمة الغرف</p></li>
+                                           <h4 class="tx1">التـاكـد مـن عمليـة ادخـال البيانـات وصحتهـا</h4>
+                                           <h4 class="tx1"> مـدة الحجـر والحضـور لاتتجـاوز الوقت المحدد</h4>
+                                           <h4 class="tx1"> يتـم خصم تكلفـة الالغـاء من القيمة المدفوعـه</h4>
+                                           <h4 class="tx1"> يمكـن تغير نوع العرض في وقت المحدد </h4>
+                                           <br>
+    <!-----------------------------------------------------------------------------------باية الاتصال----------------------------------------------------------------->
+                                          
+                                 <!---------------------------------------نهاية الاتصال------------------------------------->
                                
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/موقف جديد.svg"><br>موقف سيارات</p></li>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>سجادة للصلاة</p></li>
-                                  <br>
-                                  </ul>
-                                </div>
-                                <script>
-                                  function togglesalatlistt_A3(){
-                                    var salatList=document.getElementById("salat-list-A3");
-                                    if (salatList.style.display=="none"){
-                                      salatList.style.display="block";
-                                    }else{
-                                      salatList.style.display="none";
-                                    }
+        
+                                 
+                                 
+                                 <!-------------------------------------------------باية تفاصيل الحجز----------------------------------->
+                                 <!--
+                                 <style>
+                                   #salat-list-d2{
+                                     display: none;
+                                   }
+                                 </style>-->
+                                 <h4 class="cl1"><a onclick="togglesalatlistt_d2()"> <img  src="icon2/عرض.svg" width="25px">تفاصيل  الحجـــز</a></h4> 
+                               
+                                 <div id="salat-list-d2">
+                                 <ul>
+                                 <!------------------------------------------الجدول الاول------------------------------------>
+                                 <article>
+                                   <table>
+                                       <hr>
+                                       <colgroup>
+                                           <col span="1" class="column">
+                                       </colgroup>
+                                       
+                                       <thead>
+                                         
+                                           <tr>
+                                               
+                                               <th>مساحة الغرفة</th>
+                                               <th>الكلفــة</th>
+                                               <th>الطابــق</th>
+                                               <th>غرفة</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               
+                                              
+                                               <td>......</td>
+                                               <td>40.000﷼</td>
+                                               <td>السادس</td>
+                                               <td>607</td>
+                                           </tr>
+                                       </tbody>
+                                   </table>
+                                 </article>
+                                 <!--------------------------------------------الجدول الثاني-------------------------------------->
+                                 <article>
+                                   <table>
+                                       <hr>
+                                       <colgroup>
+                                           <col span="1" class="column">
+                                       </colgroup>
+                                       <thead>
+                                           <tr>
+                                               
+                                               <th>تكلفة الخدمات</th>
+                                               <th>نوع الخدمات</th>
+                                               <th>محتوى الحمام</th>
+                                               <th>محتوى الغرفة</th>
+                                              
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               
+                                              
+                                               <td>......</td>
+                                               <td>......</td>
+                                               <td>......</td>
+                                               <td>سرير عائلي</td>
+                                           </tr>
+                                          
+                                           <tr>
+                                               
+                                              
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                            <td>.......</td>
+                                            <td>........</td>
+                                        </tr>
+                                       </tbody>
+                                   </table>
+                                 </article>
+                                 
+                                 <!---------------------------------------------------------------جدول الثالث---->
+                                 
+                                 <article>
+                                   <table>
+                                       <hr>
+                                       <colgroup>
+                                           <col span="1" class="column">
+                                       </colgroup>
+                                       
+                                       <thead>
+                                         
+                                           <tr>
+                                               
+                                               <th>...........</th>
+                                               <th>...........</th>
+                                               <th>مدة الالغاء</th>
+                                               <th>مدة الحجز</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                               
+                                              
+                                               <td>.......</td>
+                                               <td>.......</td>
+                                               <td>16 mint</td>
+                                               <td>15 mint</td>
+                                           </tr>
+                                       </tbody>
+                                   </table>
+                                  
+                                 </article>
+                                 <br>
+                                 <a href="5-3.html" class="btn btn-primary btn-style1">تاكيد</a>
+                                 <br></br>
+                                 </ul></div>
+                                 <br>     
+                                 <style>
+                                  #salat-list-d1{
+                                  display: none;
                                   }
-                                </script> 
-                                   <br>
-                                  <div class="y">
-                                        <a href="4-3.html" class="btn btn-primary btn-style1">للحجز وتواصي</a>
-                                  </div>
-                                
+                                 </style>
+                                <h4 class="cl2"><a onclick="togglesalatlistt_d1()"><img  src="icon3/الاتصال.svg" width="20px">الاتصــال بمكــان الاقامــة</a></h4> 
+                                <div id="salat-list-d1">
                                   <br>
-                                </ul>
-                                </div>
-                                <script>
-                                      function togglesalatlistt_t2(){
-                                        var salatList=document.getElementById("salat-list-3");
-                                        if (salatList.style.display=="none"){
-                                          salatList.style.display="block";
-                                        }else{
-                                          salatList.style.display="none";
-                                        }
-                                      }
-                                    </script>                       
+                                 <ul>
+                                 
+                                   <br>
+                                   <a><img  src="icon3/call.png" width="40px"></a>
+                                   <br></br>
+                                 </ul></div>
+                              
+                               <script>
+                               function togglesalatlistt_d1(){
+                                 var salatList=document.getElementById("salat-list-d1");
+                                 if (salatList.style.display=="none"){
+                                   salatList.style.display="block";
+                                 }else{
+                                   salatList.style.display="none";
+                                 }
+                               }
+                             </script> 
+                                 <!------------------------------------نهاية تفاصيل الحجز--------------------------------->  
+                                 <script>
+                                   function togglesalatlistt_d2(){
+                                     var salatList=document.getElementById("salat-list-d2");
+                                     if (salatList.style.display=="none"){
+                                       salatList.style.display="block";
+                                     }else{
+                                       salatList.style.display="none";
+                                     }
+                                   }
+                                 </script> 
+                                  <!------------------------------------نهاية تفاصيل الحجز--------------------------------->  
+                                    
+                                            
+                                  </ul>
+                                
+                                      </div>
+                                      <script>
+                                          function togglesalatlistt_t1(){
+                                            var salatList=document.getElementById("salat-list-2");
+                                            if (salatList.style.display=="none"){
+                                              salatList.style.display="block";
+                                            }else{
+                                              salatList.style.display="none";
+                                            }
+                                          }
+                                        </script>   
+                                             
+                                      </div>
+                                     
                                   </div>
+                                 
                               </div>
                           </div>
-                      </div>
-                        </div>
+                          
+                        </div> 
+
+
+<!--------------------------------------------------------نهاية الفصل الثاني---------------------------------->
+<div class="row">
+  <div class="col-md-12 mx-auto">
+<div class="item">
+  <div class="card">
+      <div class="card-header p-0 position-relative">
+        <div class="course-price-badge"><h4 class="s">غرف ديلوكس</h4></div>
+          <a href="#blog-single" class="zoom d-block">
+            <img class="card-img-bottom d-block" src="images/جناحvip.jpg"alt="Card image cap" id="showPopup3">
+            <div id="overlay3"></div>
+            <div id="popup3">
+            <br>
+
+
+            <br>
+           <h4 class="x"><a id="closePopup3">اغلاق</a></h4>
+          </div>
+          <script>
+            const showPopupButton3 = document.getElementById('showPopup3');
+            const popup3 = document.getElementById('popup3');
+            const overlay3 = document.getElementById('overlay3');
+            const closePopupButton3 = document.getElementById('closePopup3');
+          
+          
+            showPopupButton3.addEventListener('click', () => {
+                popup3.style.display = 'block';
+                overlay3.style.display = 'block';
+            });
+          
+            closePopupButton3.addEventListener('click', () => {
+                popup3.style.display = 'none';
+                overlay3.style.display = 'none';
+            });
+          
+            overlay3.addEventListener('click', () => {
+                popup3.style.display = 'none';
+                overlay3.style.display = 'none';
+            });
+          </script>
+          
+          <!---------------------------------------------------------------3-3-->
+        
+           
+        
+          </a>
+      </div>
+      <div class="y">
+        <p class="fnt"></p>
+        <div class="shaheen11"> 
+          <div class="shaheen">
+            <li>
+              <a class="ax" onclick="togglesalatlistt_t2()"><img class="n" src="icon2/p.svg">تفاصيل</a>
+            
+            </li>
+            </div>
+            <div class="shaheen">
+              <li>
+                <p class="fnt2">40.000﷼<img class="n" src="icon2/فلوس1.svg"></p>
+               
+            </li>
+            </div>
+            <div class="shaheen">
+              <li>
+                <p class="fnt22">608<img class="n" src="icon2/باب جديد.svg"></p>
+            </li>
+          </div>
+        </div>    
+     
+        <br>
+        <div id="salat-list-3">
+          <ul>
+           
+            <div class="shaheen112"> 
+              <br>                           
+              <div class="v">
+               <a>شــروط  الحجـــز</a></div>
+              
+                   <h4 class="tx1">التـاكـد مـن عمليـة ادخـال البيانـات وصحتهـا</h4>
+                   <h4 class="tx1"> مـدة الحجـر والحضـور لاتتجـاوز الوقت المحدد</h4>
+                   <h4 class="tx1"> يتـم خصم تكلفـة الالغـاء من القيمة المدفوعـه</h4>
+                   <h4 class="tx1"> يمكـن تغير نوع العرض في وقت المحدد </h4>
+                  
+<!-----------------------------------------------------------------------------------باية الاتصال----------------------------------------------------------------->
+                 
+         <!---------------------------------------نهاية الاتصال------------------------------------->
+       
+
+         
+         
+         <!-------------------------------------------------باية تفاصيل الحجز----------------------------------->
+        <!-- <style>
+           #salat-list-e2{
+             display: none;
+           }
+         </style>-->
+         <br>
+         <h4 class="cl1"><a onclick="togglesalatlistt_e2()"> <img  src="icon2/عرض.svg" width="25px">تفاصيل الحجز</a></h4> 
+       
+         <div id="salat-list-e2">
+         <ul>
+         <!------------------------------------------الجدول الاول------------------------------------>
+         <article>
+           <table>
+               <hr>
+               <colgroup>
+                   <col span="1" class="column">
+               </colgroup>
+               
+               <thead>
+                 
+                   <tr>
+                       
+                       <th>مساحة الغرفة</th>
+                       <th>الكلفــة</th>
+                       <th>الطابــق</th>
+                       <th>غرفة</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       
+                      
+                       <td>....</td>
+                       <td>40.000﷼</td>
+                       <td>السادس</td>
+                       <td>608</td>
+                   </tr>
+               </tbody>
+           </table>
+         </article>
+         <!--------------------------------------------الجدول الثاني-------------------------------------->
+         <article>
+           <table>
+               <hr>
+               <colgroup>
+                   <col span="1" class="column">
+               </colgroup>
+               <thead>
+                   <tr>
+                       
+                       <th>تكلفة الخدمات</th>
+                       <th>نوع الخدمات</th>
+                       <th>محتوى الحمام</th>
+                       <th>محتوى الغرفة</th>
+                      
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       
+                      
+                       <td>......</td>
+                       <td>الوجبات</td>
+                       <td>مجفف شعر</td>
+                       <td>سرير عائلي</td>
+                   </tr>
+                  
+                   <tr>
+                       
+                      
+                    <td>.......</td>
+                    <td>.......</td>
+                    <td>.......</td>
+                    <td>........</td>
+                </tr>
+               </tbody>
+           </table>
+         </article>
+         
+         <!---------------------------------------------------------------جدول الثالث---->
+         
+         <article>
+           <table>
+               <hr>
+               <colgroup>
+                   <col span="1" class="column">
+               </colgroup>
+               
+               <thead>
+                 
+                   <tr>
+                       
+                       <th>...........</th>
+                       <th>...........</th>
+                       <th>مدة الالغاء</th>
+                       <th>مدة الحجز</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       
+                      
+                       <td>.......</td>
+                       <td>.......</td>
+                       <td>16 mint</td>
+                       <td>15 mint</td>
+                   </tr>
+               </tbody>
+           </table>
+          
+         </article>
+         <br>
+         <a href="5-3.html" class="btn btn-primary btn-style1">تاكيد</a>
+         <br></br>
+         <style>
+          #salat-list-e1{
+          display: none;
+          }
+         </style>
+        <h4 class="cl2"><a onclick="togglesalatlistt_e1()"><img  src="icon3/الاتصال.svg" width="20px">الاتصــال بمكــان الاقامــة</a></h4> 
+        <div id="salat-list-e1">
+         <ul>
+           <br></br>
+           <a><img  src="icon3/call.png" width="40px"></a>
+           <br></br>
+         </ul></div>
+      
+       <script>
+       function togglesalatlistt_e1(){
+         var salatList=document.getElementById("salat-list-e1");
+         if (salatList.style.display=="none"){
+           salatList.style.display="block";
+         }else{
+           salatList.style.display="none";
+         }
+       }
+     </script> 
+         </ul></div>
+         <br>     
+         <!------------------------------------نهاية تفاصيل الحجز--------------------------------->  
+         <script>
+           function togglesalatlistt_e2(){
+             var salatList=document.getElementById("salat-list-e2");
+             if (salatList.style.display=="none"){
+               salatList.style.display="block";
+             }else{
+               salatList.style.display="none";
+             }
+           }
+         </script> 
+          <!------------------------------------نهاية تفاصيل الحجز--------------------------------->  
+            
+                    
+          </ul>
+        
+              </div>
+              <script>
+                  function togglesalatlistt_t2(){
+                    var salatList=document.getElementById("salat-list-3");
+                    if (salatList.style.display=="none"){
+                      salatList.style.display="block";
+                    }else{
+                      salatList.style.display="none";
+                    }
+                  }
+                </script>   
+                     
+              </div>
+             
+          </div>
+         
+      </div>
+  </div>
+  
+</div> 
+<!---------------------------------------------------الفصل الثالث-------------------------------------------->
                         <div class="row">
                           <div class="col-md-12 mx-auto">
                       <div class="item">
                           <div class="card">
                               <div class="card-header p-0 position-relative">
-                                <div class="course-price-badge">غرفة ديلوكس</div>
+                                <div class="course-price-badge"><h4 class="s">غرف ديلوكس</h4></div>
                                   <a href="#blog-single" class="zoom d-block">
-                                    <img class="card-img-bottom d-block" src="assets/images/جناحvip.jpg"alt="Card image cap">
+                                    <img class="card-img-bottom d-block" src="images/جناحvip.jpg"alt="Card image cap">
                                   </a>
                               </div>
                               <div class="y">
@@ -529,18 +1052,18 @@
                                 <div class="shaheen11"> 
                                   <div class="shaheen">
                                     <li>
-                                      <a class="ax" onclick="togglesalatlistt_t3()"><img class="n" src="assets/icon2/p.svg">تفاصيل</a>
+                                      <a class="ax" onclick="togglesalatlistt_t3()"><img src="icon3/قفل.png" width="20px">مغلق</a>
                                       
                                     </li>
                                   </div>
                                   <div class="shaheen">
                                     <li>
-                                      <p class="fnt2">40.000﷼<img class="n" src="assets/icon2/فلوس1.svg"></p>
+                                      <p class="fnt2">40.000﷼<img class="n" src="icon2/فلوس1.svg"></p>
                                     </li>
                                   </div>
                                   <div class="shaheen">
                                       <li>
-                                        <p class="fnt22">609<img class="n" src="assets/icon2/باب جديد.svg"></p>
+                                        <p class="fnt22">609<img class="n" src="icon2/باب جديد.svg"></p>
                                       </li>
                                   </div>
                                 </div>
@@ -553,17 +1076,17 @@
                                       <li> <h4 class="tx0">مــزايــا الغــرف والاجنحــــة</h4></li>
                                 
                                   
-                                      <li> <a class="tx" onclick="togglesalatlistt_B1()">الغـــــرف والحمـــــام</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
+                                      <li> <a class="tx" onclick="togglesalatlistt_B1()"><h4  class="tx">الغـــــرف والحمـــــام</h4></a><img class="M" src="icon2/انقر.svg"></li>
                                       <div id="salat-list-B1">
                                         <ul>
                                       <br>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/سرير.svg"><br>سرير عائلي</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/غسيل الملابس.svg"><br>خزانة ملابس</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>مجفف شعر</p></li>
+                                      <li> <p class="t"><img class="n" src="icon2/سرير.svg"><br>سرير عائلي</p></li>
+                                      <li> <p class="t"><img class="n" src="icon2/غسيل الملابس.svg"><br>خزانة ملابس</p></li>
+                                      <li> <p class="t"><img class="n" src="icon2/مصفف شعر.svg"><br>مجفف شعر</p></li>
                                      
-                                      <li> <p class="t"><img class="n" src="assets/icon2/bathtub_48dp_F19E39_FILL0_wght400_GRAD0_opsz48.svg"><br>بانيوم</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>.....</p></li>
-                                      <li> <p class="t"><img class="n" src="assets/icon2/مراية.svg"><br>مراة المكياج / الحلاقة</p></li>
+                                      <li> <p class="t"><img class="n" src="icon2/bathtub_48dp_F19E39_FILL0_wght400_GRAD0_opsz48.svg"><br>بانيوم</p></li>
+                                      <li> <p class="t"><img class="n" src="icon2/مصفف شعر.svg"><br>.....</p></li>
+                                      <li> <p class="t"><img class="n" src="icon2/مراية.svg"><br>مراة المكياج / الحلاقة</p></li>
                                       <br>
                                     </ul>
                                   </div>
@@ -578,7 +1101,7 @@
                                       }
                                     </script> 
                                       
-                                      <li> <a class="tx"onclick="togglesalatlistt_B2()">تكنــــــولـــــوجيـــــــا</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
+                                      <li> <a class="tx"onclick="togglesalatlistt_B2()"><h4  class="tx">تكنــــــولـــــوجيـــــــا</h4></a><img class="M" src="assets/icon2/انقر.svg"></li>
                                       <div id="salat-list-B2">
                                         <ul>
                                          <br>
@@ -603,7 +1126,7 @@
                                       }
                                     </script> 
                                     
-                                    <li> <a class="tx"onclick="togglesalatlistt_B3()">الخــدمـات المجانيـــة</a><br><img class="M" src="assets/icon2/انقر.svg"></li>
+                                    <li> <a class="tx"onclick="togglesalatlistt_B3()"><h4 class="tx">الخــدمـات المجانيـــة</h4></a><img class="M" src="assets/icon2/انقر.svg"></li>
                                     <div id="salat-list-B3">
                                     <ul>
                                     <br>
@@ -626,13 +1149,13 @@
                                   </script> 
                                      <br>
                                     <div class="y">
-                                          <a href="4-4.html" class="btn btn-primary btn-style1">للحجز وتواصي</a>
+                                          <a href="5-4.html" class="btn btn-primary btn-style1">للحجز وتواصي</a>
                                     </div>
                                     <br>
                                   </ul>
                                   </div>
                                   <script>
-                                      function togglesalatlistt_t3(){
+                                      function togglesalatlistt_t(){
                                         var salatList=document.getElementById("salat-list-4");
                                         if (salatList.style.display=="none"){
                                           salatList.style.display="block";
@@ -651,9 +1174,9 @@
                     <div class="item">
                         <div class="card">
                             <div class="card-header p-0 position-relative">
-                                <div class="course-price-badge">غرفة ديلوكس</div>
+                              <div class="course-price-badge"><h4 class="s">غرف ديلوكس</h4></div>
                                 <a href="#blog-single" class="zoom d-block">
-                                  <img class="card-img-bottom d-block" src="assets/images/جناحvip.jpg"alt="Card image cap">
+                                  <img class="card-img-bottom d-block" src="images/جناحvip.jpg"alt="Card image cap">
                                 </a>
                             </div>
                             <div class="y">
@@ -661,18 +1184,18 @@
                               <div class="shaheen11"> 
                                 <div class="shaheen">
                                   <li>
-                                    <a class="ax" onclick="togglesalatlistt_t4()"><img class="n" src="assets/icon2/p.svg">تفاصيل</a>
+                                    <a class="ax" onclick="togglesalatlistt_t4()"><img src="icon3/قفل.png" width="20px">مغلق</a></a>
                                     
                                   </li>
                                 </div>
                                 <div class="shaheen">
                                   <li>
-                                    <p class="fnt2">40.000﷼<img class="n" src="assets/icon2/فلوس1.svg"></p>
+                                    <p class="fnt2">40.000﷼<img class="n" src="icon2/فلوس1.svg"></p>
                                   </li>
                                 </div>
                                 <div class="shaheen">
                                     <li>
-                                      <p class="fnt22">613<img class="n" src="assets/icon2/باب جديد.svg"></p>
+                                      <p class="fnt22">613<img class="n" src="icon2/باب جديد.svg"></p>
                                     </li>
                                 </div>
                               </div>
@@ -682,39 +1205,91 @@
                                 <ul>
                                   <div class="shaheen112"> 
                                     <br>
-                                  <li> <h4 class="tx">مــزايا الغرف والاجنحــة</h4></li>
-                                  <div class="shaheen1122"> 
-                                  <li>   <p class="t"><img class="n" src="assets/icon2/سرير.svg"><br>سرير عائلي</p></li></div>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>ماكينة اعداد القهوة ولشاي</p></li>
-                                  <li>   <p class="t"><img class="n" src="assets/icon2/غسيل الملابس.svg"><br>خزانة ملابس</p></li>
-                                
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/ثلاجة.svg"><br>ثلاجة اطعمة</p></li>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>سجادة للصلاة</p></li>
+                                  <li> <h4 class="tx0">مــزايا الغرف والاجنحــة</h4></li>
+                                  <li> <a class="tx" onclick="togglesalatlistt_C1()"><h4  class="tx">الغـــــرف والحمـــــام</h4></a><img class="M" src="assets/icon2/انقر.svg"></li>
+                                  <div id="salat-list-C1">
+                                    <ul>
                                   <br>
-                                  <li> <h4 class="tx">الخــدمـــــــــــات</h4></li>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/الخدمات.svg"><br>خدمة الغرف</p></li>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/موقف جديد.svg"><br>موقف سيارات</p></li>
-                                  <br>
-                                  <li> <h4 class="tx">الســريــر والحمــام</h4></li>
+                                  <li> <p class="t"><img class="n" src="assets/icon2/سرير.svg"><br>سرير عائلي</p></li>
+                                  <li> <p class="t"><img class="n" src="assets/icon2/غسيل الملابس.svg"><br>خزانة ملابس</p></li>
                                   <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>مجفف شعر</p></li>
+                                 
+                                  <li> <p class="t"><img class="n" src="assets/icon2/bathtub_48dp_F19E39_FILL0_wght400_GRAD0_opsz48.svg"><br>بانيوم</p></li>
+                                  <li> <p class="t"><img class="n" src="assets/icon2/مصفف شعر.svg"><br>.....</p></li>
                                   <li> <p class="t"><img class="n" src="assets/icon2/مراية.svg"><br>مراة المكياج / الحلاقة</p></li>
-                                  <li>  <p class="t"><img class="n" src="assets/icon2/bathtub_48dp_F19E39_FILL0_wght400_GRAD0_opsz48.svg"><br>bathtub</p></li>
                                   <br>
-                                  <li> <h4 class="tx">تكنـــولوجيـــــــا</h4></li>
+                                </ul>
+                              </div>
+                              <script>
+                                  function togglesalatlistt_C1(){
+                                    var salatList=document.getElementById("salat-list-C1");
+                                    if (salatList.style.display=="none"){
+                                      salatList.style.display="block";
+                                    }else{
+                                      salatList.style.display="none";
+                                    }
+                                  }
+                                </script> 
+                                  
+                                  <li> <a class="tx"onclick="togglesalatlistt_C2()"><h4  class="tx">تكنــــــولـــــوجيـــــــا</h4></a><img class="M" src="assets/icon2/انقر.svg"></li>
+                                  <div id="salat-list-C2">
+                                    <ul>
+                                     <br>
                                      <li> <p class="t"><img class="n" src="assets/icon2/شاشة.svg"><br>TV-HD بوصة42</p></li>
                                      <li>  <p class="t"><img class="n" src="assets/icon2/usb.svg"><br>مقباس USB مباشر</p></li>
-                                    
+                                     <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>ماكينة اعداد القهوة ولشاي</p></li>
+                                     <li>  <p class="t"><img class="n" src="assets/icon2/ثلاجة.svg"><br>ثلاجة اطعمة</p></li>
                                      <li>  <p class="t"><img class="n" src="assets/icon2/الوافاي.svg"><br>wifi</p></li>
                                      <li>  <p class="t"><img class="n" src="assets/icon2/مكيف مركزي.svg"><br>تكيف</p></li>
-                                     <br>
-                                  <div class="y">
-                                        <a href="غرفة-401.html" class="btn btn-primary btn-style1">حجز</a>
-                                  </div>
+                                     
                                   <br>
+                                </ul>
+                              </div>
+                              <script>
+                                  function togglesalatlistt_C2(){
+                                    var salatList=document.getElementById("salat-list-C2");
+                                    if (salatList.style.display=="none"){
+                                      salatList.style.display="block";
+                                    }else{
+                                      salatList.style.display="none";
+                                    }
+                                  }
+                                </script> 
+                                
+                                <li> <a class="tx"onclick="togglesalatlistt_C3()"><h4 class="tx">الخــدمـات المجانيـــة</h4></a><img class="M" src="assets/icon2/انقر.svg"></li>
+                                <div id="salat-list-C3">
+                                <ul>
+                                <br>
+                                <li>  <p class="t"><img class="n" src="assets/icon2/الخدمات.svg"><br>خدمة الغرف</p></li>
+                             
+                                <li>  <p class="t"><img class="n" src="assets/icon2/موقف جديد.svg"><br>موقف سيارات</p></li>
+                                <li>  <p class="t"><img class="n" src="assets/icon2/الة.svg"><br>سجادة للصلاة</p></li>
+                                <br>
+                                </ul>
+                              </div>
+                              <script>
+                                function togglesalatlistt_C3(){
+                                  var salatList=document.getElementById("salat-list-C3");
+                                  if (salatList.style.display=="none"){
+                                    salatList.style.display="block";
+                                  }else{
+                                    salatList.style.display="none";
+                                  }
+                                }
+                              </script> 
+                                 <br>
+                                <div class="y">
+                                      <a href="4-4.html" class="btn btn-primary btn-style1">للحجز وتواصي</a>
+                                </div>
+                                <br>
+
+
+
+
                                 </ul>
                                 </div>
                                 <script>
-                                    function togglesalatlistt_t4(){
+                                    function togglesalatlistt_t(){
                                       var salatList=document.getElementById("salat-list-5");
                                       if (salatList.style.display=="none"){
                                         salatList.style.display="block";
@@ -728,13 +1303,9 @@
                         </div>
                     </div>
                     </div>
-
-                  
-             
-              </div>
-          </div>
-        
-         
+                   
+                     
+                                    
             
                  
               
@@ -749,17 +1320,17 @@
 
 
 
-
-
+<!--<li><a href="حجز vip.html" class="btn btn-style btn-primary mt-md-5 mt-4">حجــز</a></li>-->
+<br></br>
 
 <!-- Template JavaScript -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
 
-<script src="assets/js/theme-change.js"></script>
+<script src="js/theme-change.js"></script>
 
 <!-- js for portfolio lightbox -->
-<script src="assets/js/jquery-2.1.4.min.js"></script>
-<script src="assets/js/jquery.chocolat.js "></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.chocolat.js "></script>
 <!--light-box-files -->
 <script type="text/javascript ">
   $(function () {
@@ -768,7 +1339,7 @@
 </script>
 <!-- /js for portfolio lightbox -->
 
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script>
   $(document).ready(function () {
     $('.popup-with-zoom-anim').magnificPopup({
@@ -872,7 +1443,7 @@
 </script>
 <!-- //script for blog slider -->
 
-<script src="assets/js/owl.carousel.js"></script>
+<script src="js/owl.carousel.js"></script>
 
 <!-- script for banner slider-->
 <script>
@@ -949,7 +1520,7 @@
 </script>
 <!--//MENU-JS-->
 
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
