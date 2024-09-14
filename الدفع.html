@@ -74,9 +74,24 @@
 <h2 class="tx2">من خـــلال</h2>
 
 <style>
+  .xxx{
+  background-color: rgba(137, 43, 226, 0.818);
+   text-align: center;
+   padding: 10%;
+   border-radius:5px;
+ }
+ .kuraimi{
+
+  text-align: center;
+  color: #000;
+ background-color: white;
+ border-radius:50px;
+ padding: 0%;
+}
+
   .c{
     background-color: white;
-    color: blueviolet;
+    color: rgba(137, 43, 226, 0.286);
   }
 </style>
 
@@ -88,7 +103,7 @@
 <div id="salat-list-1">
 <ul>
 <br>
-<input type="text" id="myinput" value="1071804" class="c" readonly>
+<input type="text" id="myinput" value="1122880" class="c" readonly>
 <br>
 <button onclick="copyText()"><img src="icon2/نسخ.svg" width="45%"></button>
 <script>
@@ -103,6 +118,12 @@
 
 </script>
 
+<br></br>
+<h4>او</h4>
+<br></br>
+
+<a><img src="images/كود.jpg" width="25%"><br><H4>QR</H4></a>
+<br></br>
 <br></br>
 <style>
   #salat-list-v{
@@ -124,6 +145,7 @@
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
+    padding: 10px;
   }
   .cl2{
     color: white;
@@ -136,7 +158,7 @@
 <div class="cl1">
   <h4 class="cl2">SMS عبر رسائل </h4>
   <br>
-  <input type="text" id="message" class="r1" placeholder="------" /><br>
+  <input type="tel" id="message" class="r1" placeholder="يتم كتابة سند الايصال هنا" /><br>
   <button id="sendButton">ارسال</button>
 </div>
   <script>
@@ -147,13 +169,30 @@
           window.open(smsURL, '_blank');
       };
   </script>
-
-<br></br>
+<h4 class="x2">او</h4>
+<br>
 <div class="cl1">
   <h4 class="cl2">whatsapp عبر رسائل </h4>
   <br>
-  <input type="text" id="message" class="r1" placeholder="------" /><br>
-  <button id="sendButton">ارسال</button>
+  <input type="tel" id="messagee" class="r1" placeholder="يتم كتابة سند الايصال هنا" /><br>
+  <button onclick="sendToWhatsApp()">ارسال</button>
+  <script>
+        function sendToWhatsApp() {
+        const messagee = document.getElementById('messagee').value;
+        if (!messagee){
+                alert("يرجى ملء الحقل .");
+                return;  }
+             const message = `سند الاداع هو : ${messagee}`;
+             const phoneNumber = '734157579';
+             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+             window.location.href = url;
+
+          
+             setTimeout(() => {
+             window.location.replace("page3.html");
+               }, 3000); // 3 ثواني
+                                                      }
+</script>
 </div>
 </ul>
 </div>
@@ -168,8 +207,7 @@
   }
 </script>    
 <br></br>
-<br></br>
-<a><img src="images/كود.jpg" width="30%"><br><H4>QR</H4></a>
+
 <br></br>
 <br></br>
 <br></br>
@@ -286,7 +324,19 @@
 </script>     
 
 <br></br>
-<li><a href="" class="bt1">فتح التطبيق</a></li>
+<button onclick="openKariamiApp()">فتح تطبيق الكريمي</button>
+
+    <script>
+        function openKariamiApp() {
+            // محاولة فتح التطبيق
+            window.location.href = "karemimobile://";
+            
+            // إذا لم يفتح التطبيق، يمكنك توجيه المستخدم إلى متجر Google Play
+            setTimeout(function () {
+                window.location.href = "https://play.google.com/store/apps/details?id=pub.alkuraimi";
+            }, 2000); // الانتظار لمدة ثانيتين قبل التوجيه
+        }
+    </script>
 <br></br>
 
 
