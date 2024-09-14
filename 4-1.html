@@ -83,7 +83,7 @@
 <!---------------------------------------------------------------------------------------->
        
 <!----------------------------------------------------------------------->
-<select id="roomNumber" required>
+<select id="Number" required>
   <option value="">قم باادخال رقم الغرفة</option>
   <option value="1">401</option>
   <option value="2">402</option>
@@ -107,15 +107,15 @@
             const phone = document.getElementById('phone').value;
             const roomType = document.getElementById('roomType').value;
             const floor = document.getElementById('floor').value;
-            const roomNumber = document.getElementById('roomNumber').value;
+            const Number = document.getElementById('Number').value;
             const dateTime = document.getElementById('dateTime').value;
 
-            if (!name || !phone || !roomType || !floor || !roomNumber || !dateTime) {
+            if (!name || !phone || !roomType || !floor || !Number || !dateTime) {
                 alert("يرجى ملء جميع الحقول.");
                 return;
             }
 
-            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n وقت وتاريخ الحجز: ${dateTime}\n نوع المجلس : ${roomType} \n الطابق: ${floor} \n رقم المجلس: ${roomNumber}`;
+            const message = `اسـم النزيل: ${name}\nرقم الهاتف: ${phone}\n وقت وتاريخ الحجز: ${dateTime}\n نوع الغرفة : ${roomType} \n الطابق: ${floor} \n رقم الغرفة: ${Number}`;
             const phoneNumber = '734157579'; // الرقم الثابت
             const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
