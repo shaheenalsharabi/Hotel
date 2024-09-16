@@ -10447,7 +10447,7 @@ nav ul li a:hover {
   background-size: cover; }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/عرض2.jpg) no-repeat center;
+  background: url(./images/عرض2.jpg) no-repeat center;
   background-size: cover; }
 
 .w3l-main-slider .banner-view:before {
@@ -12884,16 +12884,7 @@ div#small-dialog iframe, div#small-dialog1 iframe {
 }
 
 
-.rt{
-  text-align: center;
-  padding: 6px; 
-  font-size: 35px;
-  font-weight: bold;
-  color:rgb(1, 94, 94);
 
-  border-radius: 10px;
-
-}
 .rt2{
   text-align: center;
   padding: 8px; 
@@ -12928,7 +12919,7 @@ div#small-dialog iframe, div#small-dialog1 iframe {
   font-weight: bold;
  
   border-radius: 5px;
-  color: #0b2e13;
+  color: black;
 
   padding: 10px;
  
@@ -13049,6 +13040,12 @@ width:100%;
 
 .sx{
   color: white;
+  background-color: #053146;
+  width: 70%;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius:30px;
 }
 
 
