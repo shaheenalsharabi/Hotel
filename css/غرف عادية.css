@@ -11587,7 +11587,7 @@ button.owl-next {
 
 .breadcrumb-bg-about {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.35), rgba(0, 0, 0, 0.35)), url(../images/عنوان2.jpg);
+  background-image: linear-gradient(to right, rgb(6, 56, 76), rgb(6, 56, 76)), url(../images);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom;
   background-attachment: fixed; }
@@ -13052,17 +13052,7 @@ border-radius: 10px;
   color: #BDBDBD;
   padding: 10px;
 }
-.shaheen11{
- 
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  height: 5vh;
-  background-color: var(--gray-dark);
- 
-}
+
 .shaheen{
   color: orange;
   width: 10rem;
@@ -13125,4 +13115,21 @@ border-radius: 10px;
 }
 #salat-list-H3{
   display: none;
+}
+.shaheen11x{
+ 
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: 15vh;
+ 
+
+}
+.shaheenx{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 500rem;
+ 
 }
