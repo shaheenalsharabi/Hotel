@@ -12920,7 +12920,7 @@ div#small-dialog iframe, div#small-dialog1 iframe {
  background-color:rgba(1, 94, 94, 0.96);
   color: white;
   
-  border-radius: 20px;
+  border-radius: 0px;
   
     
   padding: 7px;
