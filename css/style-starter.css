@@ -12917,9 +12917,11 @@ div#small-dialog iframe, div#small-dialog1 iframe {
   text-align: center;
   font-size: 15px;
   font-weight: bold;
- background-color:rgba(1, 94, 94, 0.96);
-  border-radius: 5px;
+/* background-color:rgba(1, 94, 94, 0.96);
   color: white;
+  */
+  border-radius: 20px;
+  color: rgba(1, 94, 94, 0.96);
   padding: 7px;
   border: 2px solid rgba(190, 125, 4, 0.943);
  
