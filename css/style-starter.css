@@ -12921,9 +12921,9 @@ div#small-dialog iframe, div#small-dialog1 iframe {
   color: white;
   */
   border-radius: 20px;
-  color: rgba(1, 94, 94, 0.96);
+  color:rgba(190, 125, 4, 0.943);
   padding: 7px;
-  border: 3px solid rgba(190, 125, 4, 0.943);
+  border: 3px solid rgba(1, 94, 94, 0.96);
  
   
 }
@@ -13046,7 +13046,7 @@ width:100%;
 /*  background-color: #053146;*/
   width: 70%;
   height: 50px;
-  font-size: 33px;
+  font-size: 40px;
   font-weight: bold;
   border-radius:20px;
   margin: 20px;
