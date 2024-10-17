@@ -73,8 +73,12 @@
       border-radius:50px;
     }
     .xn{
-     text-align: center;
+     text-align: right;
      font-weight: bold;
+    }
+    .cl3{
+      font-size: 20px;
+      font-weight: bold;
     }
   </style>
   <body>
@@ -169,7 +173,6 @@
 <h5 class="n1">: خدماتنا</h5>
 <p class="n">أنظمة محاسبية متكاملة تلبي احتياجات الشركات المختلفة</p>
 <p class="n">تصميم مواقع ويب احترافية تتسم بالتفاعلية وسهولة الاستخدام</p>
-<p class="n">(Android)تصميم تطبيقات مخصصة على نظامي</p>
 </div>
 <br></br>
 
@@ -177,7 +180,28 @@
        
 
 
-
+<a><h4 class="cl3" onclick="togglesalatlistt_12()"><u>مزيــد مــن المعلومـــات</u></h4></a>
+<div id="salat-list-12">
+<ul>
+<br></br>
+<img src="img/المالك.png" width="200px" >
+<h4 class="cl2">م / شاهين الشرعبي</h4>
+<div class="container py-lg-5">
+<p>..............................</p>
+</div>
+</ul>
+</div>
+<script>
+  function togglesalatlistt_12(){
+    var salatList=document.getElementById("salat-list-12");
+    if (salatList.style.display=="none"){
+      salatList.style.display="block";
+    }else{
+      salatList.style.display="none";
+    }
+  }
+  </script>
+<br></br>
 
 
 
@@ -232,25 +256,31 @@
           }
     .iom {
       width: 340px;
-      height: 200px;
+      
       padding: 0px;
       
     }
     .overlay {
               position: absolute;
               bottom: 10px;
-              top: 45%;
+              top: 70%;
            
-              right: 40%;
-              color:rgb(219, 156, 41);
+              right: 25%;
+              color:rgb(180, 7, 1);
               text-align: center;
               padding: 10px;
               border-radius: 10px;
-              font-size: 25px;
+              font-size: 20px;
             
               font-weight: bold;
              
           }
+    .youtube{
+     color: rgb(185, 17, 17);
+     border: 1px solid #000000;
+     border-radius: 15px;
+     padding: 5px;
+ }
   </style>
   
 
@@ -260,17 +290,21 @@
   <div id="carousel">
     <br></br>
     <div class="carousel-item active">
-      <a > <img class="iom" src="img/اعلان2.jpg" alt="صنف 1"></a>
-        <div class="overlay">............................................................................</div>
+      <a > <img class="iom" src="img/شعار1.png" alt="صنف 1"></a>
+        <div class="overlay"></div>
         
     </div>
     <div class="carousel-item">
-      <a href="2.html"><img class="iom" src="img/اعلان1.jpg" alt="صنف 2"></a>
-        <div class="overlay">.....</div>
+      <a><img class="iom" src="img/عرض3.png" alt="صنف 3"></a>
+        <div class="overlay"><a href="www.youtube.com/@NewsoftCenter" class="youtube">www.youtube.com/@NewsoftCenter</a></div>
     </div>
+    <div class="carousel-item">
+      <a href="2.html"><img class="iom" src="img/" alt="صنف 2"></a>
+        <div class="overlay"></div>
+    </div>
+   
     
     
-  
    <div class="carousel-controls">
         <p class="control-button" id="prev"></p>
         <p class="control-button" id="next"></p>
@@ -303,7 +337,7 @@
     });
   
     // تغيير الصورة تلقائيًا كل 3 ثوانٍ
-    setInterval(nextItem, 5000);
+    setInterval(nextItem, 6000);
   </script>
 
 
@@ -581,11 +615,9 @@
 <div class="container py-lg-5">
 <h2 class="cen">اراء العمـــــــلاء</h2>
 <br>
-<p class="xn">مرحباً في عملائنا</p>
-<p class="n"> نحن نؤمن بقوة التواصل وتبادل الأفكار. رأيك يهمنا، فهو جزء أساسي من رحلتنا نحو تحسين تجربتك. نود أن نسمع تجاربك، اقتراحاتك، أو حتى انتقاداتك البناءة. لا تتردد في مشاركة رأيك، فكل كلمة منك تسهم في تشكيل مستقبل خدماتنا ومنتجاتنا. دعنا نعمل معاً لجعل تجربتك أفضل</p>
- 
-
- <hr class="th">
+<p class="xn">مرحباً في عملائنا؟</p>
+<p class="n">.نحن نؤمن بقوة التواصل وتبادل الأفكار. رأيك يهمنا، فهو جزء أساسي من رحلتنا نحو تحسين تجربتك. نود أن نسمع تجاربك، اقتراحاتك، أو حتى انتقاداتك البناءة. لا تتردد في مشاركة رأيك، فكل كلمة منك تسهم في تشكيل مستقبل خدماتنا ومنتجاتنا. دعنا نعمل معاً لجعل تجربتك أفضل</p>
+<br>
 <style>
       
   .container1 {
@@ -593,7 +625,7 @@
       margin: auto;
       
       padding: 20px;
-      border-radius: 8px;
+      border-radius: 20px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       text-align: right;
       font-weight: bold;
@@ -648,10 +680,11 @@
       width: 100%;
       padding: 10px;
       margin: 5px 0;
-      border: 1px solid #ddd;
-      border-radius: 4px;
+      border: 1px solid #1fa4c5;
+      border-radius: 10px;
       font-weight: bold;
       text-align: center;
+    
   }
   .submit {
       background-color: #28a745;
@@ -708,7 +741,7 @@
     border: none;
    
     height: 2px;
-    background-color: rgb(56, 140, 209);
+    background-color: rgba(56, 140, 209, 0.26);
     margin:20px;
   }
 </style>
@@ -722,9 +755,10 @@
 <a class="fx" onclick="togglesalatlistt_11()"><img  src="img/add.png" width="50px">اظافة تعليق</a>
 <div id="salat-list-11">
 <ul>
+<br></br>
 <form id="reviewForm">  
   <input type="text" id="name" placeholder="الاســم"  maxlength="40" required>
-  <textarea id="reviewText" rows="2" placeholder=".... اكتب رأيك هنا" maxlength="80" required></textarea>
+  <textarea id="reviewText" rows="1" placeholder=".... اكتب رأيك هنا" maxlength="80" required></textarea>
   <button type="submit" class="submit"><img  src="img/٢٠٢٤١٠١٦_٠٣٢٥١٨.png" width="35px"> أضــف رأيــك</button>
 </form>
 </ul>
@@ -762,11 +796,11 @@ function togglesalatlistt_11(){
       <p class="x2">${text} <img  src="img/٢٠٢٤١٠١٦_٠٢٣٧٣٧.png" width="40px" class="" ><br></p>
       <p class="x2"> ${date}</p>
 
-     <div class="reply">${reply ? `<strong class="x2">مركز نيو سوفت <img  src="img/حساب.png" width="35px" class="IM" ></strong><br> ${reply}` : ''}</div>
+     <div class="reply">${reply ? `<strong class="x2">مركز نيو سوفت <img  src="img/حساب.png" width="35px" class="IM" ></strong><br> ${reply} <img  src="img/٢٠٢٤١٠١٦_٠٢٢٠٤٥.png" width="35px" class="IM" >` : ''}</div>
     
    
           
-          <textarea class="reply-input" rows="2" placeholder="....اكتب ردك هنا" style="display:none;" maxlength="85"></textarea>
+          <textarea class="reply-input" rows="1" placeholder="....اكتب ردك هنا" style="display:none;" maxlength="85"></textarea>
           <a class="reply-button" style="display:none;"><img  src="img/٢٠٢٤١٠١٦_٠٣٢٠٤٣.png" width="35px" class="IM" ></a>
          
 
@@ -864,12 +898,6 @@ function togglesalatlistt_11(){
 <br>
 <!-------------------------------------------------------------------المرحلة 4------------------------------------------------->
 
-<img src="img/المالك.png" width="200px" >
-<h4 class="cl2">م / شاهين الشرعبي</h4>
-<div class="container py-lg-5">
-<p>..............................</p>
-</div>
-<br></br>
 <br></br>
 <div class="x1">
 <img src="img/شعار1.png" width="200px" >
