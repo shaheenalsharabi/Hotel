@@ -12881,8 +12881,14 @@ div#small-dialog iframe, div#small-dialog1 iframe {
   text-align: center;
 }
 .cen{
-  color: rgb(192, 129, 11);
+  color: rgb(8, 155, 223);
   font-weight: bold;
  
   text-align: center;
 }
+#salat-list-12{
+  text-align: center;
+  display: none;
+  
+ }
+ 
