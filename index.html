@@ -40,34 +40,54 @@
       color: rgb(134, 134, 11);
     }
     .F{
-      color:  rgb(192, 129, 11);
+      color:  rgb(255, 255, 255);
       font-weight: bold;
       font-size:15px;
+      background-color:rgb(13, 54, 190);
+      border-radius:7px;
+      padding: 3px;
      
     }
     .I{
-      color:  rgb(192, 129, 11);
+      color:  rgb(255, 255, 255);
       font-weight: bold;
       font-size:15px;
+      background-color: rgb(226, 22, 158);
+      border-radius:7px;
+      padding: 3px;
     }
     .T{
-      color:  rgb(192, 129, 11);
+      color:  rgb(255, 254, 253);
       font-weight: bold;
       font-size:17px;
+      background-color: #000000;
+      border-radius:7px;
+      padding: 3px;
     }
     .Y{
-      color:  rgb(192, 129, 11);
+      color:  rgb(255, 255, 255);
+      font-weight: bold;
+      font-size:15px;
+      background-color: #da0808;
+      border-radius:7px;
+      padding: 3px;
+    }
+    .G{
+      color:  rgb(13, 206, 77);
       font-weight: bold;
       font-size:15px;
     }
     .xx{
-      color: rgba(129, 119, 119, 0.582);
+      color: rgba(14, 9, 9, 0.582);
       font-size: 18px;
     }
     .v{
       
-      color:  rgb(192, 129, 11);
+      color:  rgba(252, 252, 252, 0.986);
       font-size: 17px;
+      background-color: #1fa4c5;
+      padding: 3px;
+      border-radius:8px;
     }
     .IM{
       border-radius:50px;
@@ -77,95 +97,95 @@
      font-weight: bold;
     }
     .cl3{
-      font-size: 20px;
+      font-size: 23px;
       font-weight: bold;
+    }
+    .img2{
+      width: 100%;
+      height: auto;
+      border-radius:10%;
+      opacity:0.8;
+      display: block;
+      padding: 15px;
+     
+
+    }
+    .block{
+      color: #00000063;
+      font-weight: bold;
+      font-size: 25px;
     }
   </style>
   <body>
 <!--header-->
 
 
-<header id="site-header" class="fixed-top">
-<div class="container">
-<nav class="navbar navbar-expand-lg stroke px-0 pt-lg-0">   
-</a></h6>
-<br><div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-<div class="search-right">
-<div id="search" class="pop-overlay">
-<div class="popup">
-</div></div></div></div>
-<div class="mobile-position">
-              <nav class="navigation">
-                  <div class="theme-switch-wrapper">
-                      <label class="theme-switch" for="checkbox">
-                          <input type="checkbox" id="checkbox">
-                          <div class="mode-container">
-                              <i class="gg-sun"></i>
-                              <i class="gg-moon"></i>
-                          </div>
-                      </label>
-                  </div>
-              </nav>
-          </div>
-        
-      </nav>
-  </div>
-</header>
+
 <!--/header-->
 <!-- main-slider -->
-<section class="w3l-main-slider" id="home">
-    <div class="companies20-content">
-        <div class="owl-one owl-carousel owl-theme">
-            <div class="item">
-                <li>
-                    <div class="slider-info banner-view bg bg2">
-                        <div class="banner-info">
-                            <div class="container">
-                                <div class="banner-info-bg">
-                                  
-                                 
-                                  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </div>
-           
-            
-         
-        </div>
+
+<img  src="img/عرض.png" class="img2">
+
+
+
+  <a class="block"  onclick="togglesalatlistt_13()"> <img  src="img/للتواصل.png" width="55px" class="IM" ></a>
+  <a  class="block" ><img  src="img/تعليق.png" width="55px" class="IM" onclick="scrollToSection('تعليق')"></a>
+  <a id="shareBtn"><img  src="img/shar.png" width="40px"class="block"></a>
+  <script>
+    document.getElementById('shareBtn').onclick = function() {
+        const url = window.location.href; // رابط الموقع الحالي
+        if (navigator.share) {
+            navigator.share({
+                title: document.title, // عنوان الصفحة
+                url: url // رابط الصفحة
+            })
+            .then(() => {
+                console.log('تمت المشاركة بنجاح');
+            })
+            .catch((error) => {
+                console.error('خطأ في المشاركة:', error);
+            });
+        } else {
+            alert('عذراً، مشاركة الرابط غير مدعومة في هذا المتصفح.');
+        }
+    };
+</script>
+ 
+  <div id="salat-list-q">
+    <ul>
+    <br></br>
+    <h4 class="xx">:  للتواصــــل علـى الارقـــام التاليــة</h4>
+    <div class="x">
+      <a  href="tel: +967780972021" class="v"><img  src="img/call2.png" width="30px">+967780972021</a>
+      <a  href="tel: +967734157579"  class="v"><img  src="img/call2.png" width="30px">+967734157579</a>
     </div>
-</section>
+    </ul>
+    </div>
+    <script>
+      function togglesalatlistt_13(){
+        var salatList=document.getElementById("salat-list-q");
+        if (salatList.style.display=="none"){
+          salatList.style.display="block";
+        }else{
+          salatList.style.display="none";
+        }
+      }
+      </script>
+<script>
+  function
+  scrollToSection(sectionId){
+    const section=document.getElementById(sectionId);
+    section.scrollIntoView({behavior:'smooth'});
+  }
+</script>
 <!--------------------------------------------------------------المرحلة 1------------------------------------------------------------------>
-<br></br>
-<h1>للتواصــــل والاستــفـســار؟</h1>
-<h4 class="xx">: علـى الارقـــام التاليــة</h4>
-<div class="x">
-  <a  href="tel: +967780972021" class="v"><img  src="img/call2.png" width="30px">+967780972021</a>
-  <a  href="tel: +967734157579"  class="v"><img  src="img/call2.png" width="30px">+967734157579</a>
-</div>
-
-<h4 class="xx">: على موقعنا الإلكترونية</h4>
-<ul>
-    <a href="" class="F"> <img  src="img/Facebook.png" width="18px" class="IM" >Facebook</a>
-    <a href="" class="I"><img  src="img/Instagram.png" width="18px" class="IM">Instagram</a>
-
-    <a href=""  class="T"><img  src="img/Twitter X.png" width="18px" class="IM">Twitter</a>
-    <a href="" class="Y"><img  src="img/Youtube.png" width="18px" >Youtube</a>
-</ul>
-<h4 class="xx">: على البريد الإلكترونية</h4>
-<div class="">
-  <h6> <span></span><a href="mailto:info@mail.com" class="Y"><img  src="img/gmail.png" width="19px"> Gmail</a></h6>
-  <hr class="th">
-</div>
 
 <br></br>
 <div class="container py-lg-5">
 <h2 class="cen">نبذة عن المركز</h2>
 
 <br>
-<p class="n"> مركز نيو سوفت حيث يقدم مجموعة من الخدمات في مجالات الأنظمة المحاسبية، تطوير مواقع الويب، وتطبيقات الهاتف. تأسس المركز بهدف تلبية احتياجات الشركات والمؤسسات واحتياجات عملائنا</p>
+<p class="n"> مركز نيو سوفت حيث يقدم مجموعة من الخدمات في مجالات الأنظمة المحاسبية، تطوير مواقع الويب. تأسس المركز بهدف تلبية احتياجات الشركات والمؤسسات واحتياجات عملائنا</p>
 <h5 class="n1">: رؤيتنا</h5>
 <p class="n">يهدف مركز نيو سوفت لأن يكون الرائد في تقديم تقنيات مبتكرة التي سوف تسهم في تعزيز كفاءة الأعمال وتحسين الأداء</p>
 <h5 class="n1">: مهمتنا</h5>
@@ -180,7 +200,7 @@
        
 
 
-<a><h4 class="cl3" onclick="togglesalatlistt_12()"><u>مزيــد مــن المعلومـــات</u></h4></a>
+<a><h2 class="cl3" onclick="togglesalatlistt_12()"><u>مزيــد مــن المعلومـــات</u></h2></a>
 <div id="salat-list-12">
 <ul>
 <br></br>
@@ -296,7 +316,7 @@
     </div>
     <div class="carousel-item">
       <a><img class="iom" src="img/عرض3.png" alt="صنف 3"></a>
-      <!--  <div class="overlay"><a href="www.youtube.com/@NewsoftCenter" class="youtube">www.youtube.com/@NewsoftCenter</a></div>-->
+        <!--<div class="overlay"><a href="www.youtube.com/@NewsoftCenter" class="youtube">www.youtube.com/@NewsoftCenter</a></div>-->
     </div>
     <div class="carousel-item">
       <a href="2.html"><img class="iom" src="img/" alt="صنف 2"></a>
@@ -585,7 +605,7 @@
                                        
                                         <div class="course-meta">
                                             <div class="meta-item course-lesson">
-                                                <span class="fa fa-heart"></span>
+                                             <span class="fa fa-heart"></span>
                                                 <span class="meta-value"> 400 </span>
                                             </div>
                                             <div class="meta-item course-students">
@@ -612,6 +632,7 @@
     </div>
 </section>
 <br></br>
+
 <div class="container py-lg-5">
 <h2 class="cen">اراء العمـــــــلاء</h2>
 <br>
@@ -752,6 +773,7 @@
   
 <div id="reviews"></div>
 <hr class="th">
+<section id="تعليق">
 <a class="fx" onclick="togglesalatlistt_11()"><img  src="img/add.png" width="50px">اظافة تعليق</a>
 <div id="salat-list-11">
 <ul>
@@ -800,7 +822,7 @@ function togglesalatlistt_11(){
     
    
           
-          <textarea class="reply-input" rows="1" placeholder="....اكتب ردك هنا" style="display:none;" maxlength="85"></textarea>
+          <textarea class="reply-input" rows="1" placeholder=" مركز نيو سوفت من يمكنة رد" style="display:none;" maxlength="85"></textarea>
           <a class="reply-button" style="display:none;"><img  src="img/٢٠٢٤١٠١٦_٠٣٢٠٤٣.png" width="35px" class="IM" ></a>
          
 
@@ -843,7 +865,7 @@ function togglesalatlistt_11(){
       replyButton.style.display = 'block';
 
       replyButton.addEventListener('click', function() {
-          const ownerPassword = prompt("<مركز نيو سوفت من يمكنة رد");
+          const ownerPassword = prompt("ادخل كلمة المرور");
           if (ownerPassword === password) {
               const ownerReply = replyInput.value;
               if (ownerReply) {
@@ -894,15 +916,32 @@ function togglesalatlistt_11(){
 
   loadReviews();
 </script>
+</section>
 
-<br>
+
+
 <!-------------------------------------------------------------------المرحلة 4------------------------------------------------->
-
 <br></br>
+
+
 <div class="x1">
 <img src="img/شعار1.png" width="200px" >
 </div>
 <br>
+<hr class="th">
+<div class="container py-lg-5">
+  <h4 class="xx">: على موقعنا الإلكترونية</h4>
+  <ul>
+      <a href="" class="F"> <img  src="img/Facebook.png" width="18px" class="IM" >Facebook</a>
+      <a href="" class="I"><img  src="img/Instagram.png" width="18px" class="IM">Instagram</a>
+  
+      <a href=""  class="T"><img  src="img/Twitter X.png" width="18px" class="IM"> Twitter</a>
+      <a href="" class="Y"><img  src="img/Youtube.png" width="18px" >Youtube</a>
+  </ul>
+  </div>
+
+
+
 
 
           
