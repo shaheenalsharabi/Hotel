@@ -21,12 +21,20 @@
     }
     .n{
       font-weight: bold;
+      text-align: center;
+      
       
     }
     .n1{
       font-weight: bold;
       color:  rgb(192, 129, 11);
+     
       
+    }
+    .n1n{
+      text-align: center;
+      font-weight: bold;
+      color:  rgb(192, 129, 11);
     }
     .cl2{
     
@@ -128,9 +136,10 @@
 
 
 
-  <a class="block"  onclick="togglesalatlistt_13()"> <img  src="img/للتواصل.png" width="55px" class="IM" ></a>
-  <a  class="block" ><img  src="img/تعليق.png" width="55px" class="IM" onclick="scrollToSection('تعليق')"></a>
-  <a id="shareBtn"><img  src="img/shar.png" width="40px"class="block"></a>
+  <a class="block"  onclick="togglesalatlistt_13()"> <img  src="img/للتواصل.png" width="65px" class="IM" ></a>
+  <a  class="block" ><img  src="img/تعليق.png" width="65px" class="IM" onclick="scrollToSection('تعليق')"></a>
+  <a  class="block" ><img  src="img/ei_1729716618192-removebg-preview.png" width="60px" class="IM" onclick="scrollToSection('dowlowd')"></a>
+  <a id="shareBtn"><img  src="img/shar.png" width="45px"class="block"></a>
   <script>
     document.getElementById('shareBtn').onclick = function() {
         const url = window.location.href; // رابط الموقع الحالي
@@ -154,7 +163,8 @@
   <div id="salat-list-q">
     <ul>
     <br></br>
-    <h4 class="xx">:  للتواصــــل علـى الارقـــام التاليــة</h4>
+    <h4 class="xx">للتواصــــل علـى الارقـــام التاليــة</h4>
+    <br>
     <div class="x">
       <a  href="tel: +967780972021" class="v"><img  src="img/call2.png" width="30px">+967780972021</a>
       <a  href="tel: +967734157579"  class="v"><img  src="img/call2.png" width="30px">+967734157579</a>
@@ -186,30 +196,89 @@
 
 <br>
 <p class="n"> مركز نيو سوفت حيث يقدم مجموعة من الخدمات في مجالات الأنظمة المحاسبية، تطوير مواقع الويب. تأسس المركز بهدف تلبية احتياجات الشركات والمؤسسات واحتياجات عملائنا</p>
-<h5 class="n1">: رؤيتنا</h5>
+<h5 class="n1">رؤيتنا</h5>
 <p class="n">يهدف مركز نيو سوفت لأن يكون الرائد في تقديم تقنيات مبتكرة التي سوف تسهم في تعزيز كفاءة الأعمال وتحسين الأداء</p>
-<h5 class="n1">: مهمتنا</h5>
+<h5 class="n1">مهمتنا</h5>
 <p class="n">تقديم خدمات ذات جودة عالية تلبي احتياجات عملائنا، من خلال حلول مخصصة واحترافية، مع التركيز على الدعم المستمر والتدريب لضمان الاستخدام الأمثل للتقنيات</p>
-<h5 class="n1">: خدماتنا</h5>
-<p class="n">أنظمة محاسبية متكاملة تلبي احتياجات الشركات المختلفة</p>
-<p class="n">تصميم مواقع ويب احترافية تتسم بالتفاعلية وسهولة الاستخدام</p>
-</div>
+
 <br></br>
+<h2 class="cen">خــدمــاتنــا</h2>
 
-                    
-       
+<a><p class="nnx" onclick="togglesalatlistt_n1()">أنظمة محاسبية</p></a>
+<div id="salat-list-n1">
+<ul>
+  <img src="img/1.png" width="200px" >
+  <br>
+  <p class="n">أنظمة محاسبية متكاملة تلبي احتياجات المختلفة</p>
+  <p class="n">تقديم نصائح حول كيفية تحسين العمليات المحاسبية</p>
+  <p class="n"> تدريب الموظفين على استخدام الأنظمة المحاسبية</p>
+  <p class="n">توفير دعم فني مستمر وصيانة للأنظمة</p>
+ 
+
+</ul></div>
+<script>
+  function togglesalatlistt_n1(){
+    var salatList=document.getElementById("salat-list-n1");
+    if (salatList.style.display=="none"){
+      salatList.style.display="block";
+    }else{
+      salatList.style.display="none";
+    }
+  }
+  </script>
+<!-------------------------------------------------------------------------------------------------->
+
+<a><p class="nnx" onclick="togglesalatlistt_n2()"> مواقع الــويب</p></a>
+<div id="salat-list-n2">
+<ul>
+  <img src="img/2.png" width="200px" >
+  <br>
+  <p class="n">إنشاء مواقع تفاعلية وجذابة تتناسب مع هوية العلامة التجارية</p>
+  <p class="n">بناء منصات تسوق إلكتروني متكاملة</p>
+
+</ul></div>
+<script>
+  function togglesalatlistt_n2(){
+    var salatList=document.getElementById("salat-list-n2");
+    if (salatList.style.display=="none"){
+      salatList.style.display="block";
+    }else{
+      salatList.style.display="none";
+    }
+  }
+  </script>
 
 
-<a><h2 class="cl3" onclick="togglesalatlistt_12()"><u>مزيــد مــن المعلومـــات</u></h2></a>
+<a><p class="nnx" onclick="togglesalatlistt_n3()">تطبيقات الهاتف</p></a>
+<div id="salat-list-n3">
+<ul>
+  <img src="img/٢٠٢٤١٠١١_٠٠٣٢٥٤.png" width="300px" >
+  <br>
+  <p class="n">تطوير تطبيقات مخصصة</p>
+<p class="n">تقديم تحديثات دورية وصيانة للتطبيقات</p>
+</ul></div>
+<script>
+  function togglesalatlistt_n3(){
+    var salatList=document.getElementById("salat-list-n3");
+    if (salatList.style.display=="none"){
+      salatList.style.display="block";
+    }else{
+      salatList.style.display="none";
+    }
+  }
+  </script>
+
+
+<a><p class="nnx" onclick="togglesalatlistt_12()">خدمات إضافية</p></a>
 <div id="salat-list-12">
 <ul>
-<br></br>
-<img src="img/المالك.png" width="200px" >
-<h4 class="cl2">م / شاهين الشرعبي</h4>
+<p class="n">استراتيجيات تسويقية عبر منصات التواصل الاجتماعي</p>
+
 <div class="container py-lg-5">
 <p>..............................</p>
 </div>
 </ul>
+</div>
 </div>
 <script>
   function togglesalatlistt_12(){
@@ -301,6 +370,25 @@
      border-radius: 15px;
      padding: 5px;
  }
+ .nnx{
+  font-weight: bold;
+  text-align: right;
+  color: #09809e;
+  padding: 4px;
+  
+ }
+ .nnx2{
+  font-weight: bold;
+  text-align: right;
+  color: #3d63cc;
+  
+ }
+ .nnx3{
+  font-weight: bold;
+  text-align: right;
+  color: #3dcc61;
+  
+ }
   </style>
   
 
@@ -310,16 +398,16 @@
   <div id="carousel">
     <br></br>
     <div class="carousel-item active">
-      <a > <img class="iom" src="img/شعار1.png" alt="صنف 1"></a>
+      <a > <img class="iom" src="img/شعار1.png" alt="اعلان 1"></a>
         <div class="overlay"></div>
         
     </div>
     <div class="carousel-item">
-      <a><img class="iom" src="img/عرض3.png" alt="صنف 3"></a>
+      <a><img class="iom" src="img/عرض3.png" alt="اعلان 3"></a>
         <!--<div class="overlay"><a href="www.youtube.com/@NewsoftCenter" class="youtube">www.youtube.com/@NewsoftCenter</a></div>-->
     </div>
     <div class="carousel-item">
-      <a href="2.html"><img class="iom" src="img/" alt="صنف 2"></a>
+      <a href="2.html"><img class="iom" src="img/" alt="اعلان 3"></a>
         <div class="overlay"></div>
     </div>
    
@@ -363,7 +451,14 @@
 
     
 
-<!--<h2 class="cen">المشاريع السابقة</h2>-->
+<!--<h2 class="cen">المشاريع السابقة</h2>
+
+ أنظمة محاسبية متكاملة تلبي احتياجات المختلفة والمؤسسات 
+
+
+
+
+-->
 
 
 
@@ -371,11 +466,6 @@
 
 
 
-<div class="container py-lg-5">
-<h2 class="cen">الخدمـــــات المقدمــــة</h2>
-</div>
-<br></br>
-<br></br>
 
 <!--------------------------------------------------------------المرحلة 3------------------------------------------------------------------>
 <!-- //testimonials -->
@@ -775,6 +865,7 @@
 <hr class="th">
 <section id="تعليق">
 <a class="fx" onclick="togglesalatlistt_11()"><img  src="img/add.png" width="50px">اظافة تعليق</a>
+</section>
 <div id="salat-list-11">
 <ul>
 <br></br>
@@ -815,10 +906,10 @@ function togglesalatlistt_11(){
       reviewDiv.classList.add('review');
       reviewDiv.innerHTML = `
       <p class="name">${name} <img  src="img/٢٠٢٤١٠١٦_٠٢١١٥٩.png" width="30px" class="IM"></p>
-      <p class="x2">${text} <img  src="img/٢٠٢٤١٠١٦_٠٢٣٧٣٧.png" width="40px" class="" ><br></p>
+      <p class="x2"><img  src="img/٢٠٢٤١٠١٦_٠٢٣٧٣٧.png" width="40px" class="" ><br>${text} </p>
       <p class="x2"> ${date}</p>
 
-     <div class="reply">${reply ? `<strong class="x2">مركز نيو سوفت <img  src="img/حساب.png" width="35px" class="IM" ></strong><br> ${reply} <img  src="img/٢٠٢٤١٠١٦_٠٢٢٠٤٥.png" width="35px" class="IM" >` : ''}</div>
+     <div class="reply">${reply ? `<strong class="x2">مركز نيو سوفت <img  src="img/حساب.png" width="35px" class="IM" ></strong> <br> <img  src="img/٢٠٢٤١٠١٦_٠٢٢٠٤٥.png" width="35px" class="IM" ><br> ${reply}` : ''}</div>
     
    
           
@@ -916,21 +1007,24 @@ function togglesalatlistt_11(){
 
   loadReviews();
 </script>
-</section>
+
 
 
 
 <!-------------------------------------------------------------------المرحلة 4------------------------------------------------->
 <br></br>
-
-
-<div class="x1">
-<img src="img/شعار1.png" width="200px" >
-</div>
+<section id="dowlowd">
+<img src="img/ei_1729717285539-removebg-preview.png" width="150px" >
+<h4 class="xx">قم بتحميل التطبيق</h4>
+<br>
+<a><img src="img/ei_1729716680697-removebg-preview2.png" width="100px" ></a><br>
+<a><img src="img/ei_1729716680697-removebg-preview.png" width="100px" ></a>
+</section>
 <br>
 <hr class="th">
-<div class="container py-lg-5">
-  <h4 class="xx">: على موقعنا الإلكترونية</h4>
+
+  <h4 class="xx">على موقعنا الإلكترونية</h4>
+  <br>
   <ul>
       <a href="" class="F"> <img  src="img/Facebook.png" width="18px" class="IM" >Facebook</a>
       <a href="" class="I"><img  src="img/Instagram.png" width="18px" class="IM">Instagram</a>
@@ -938,10 +1032,10 @@ function togglesalatlistt_11(){
       <a href=""  class="T"><img  src="img/Twitter X.png" width="18px" class="IM"> Twitter</a>
       <a href="" class="Y"><img  src="img/Youtube.png" width="18px" >Youtube</a>
   </ul>
-  </div>
+ 
 
 
-
+ 
 
 
           
